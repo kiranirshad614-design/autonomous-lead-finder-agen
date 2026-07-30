@@ -17,6 +17,10 @@
                 // Update Metrics
                 document.getElementById('total-leads').innerText = scoredLeads.all_scored.length;
                 document.getElementById('hot-leads').innerText = scoredLeads.hot_leads.length;
+                
+                const totalLostRevenue = scoredLeads.all_scored.reduce((sum, lead) => sum + (lead.estimated_monthly_lost_revenue || 0), 0);
+                document.getElementById('lost-revenue').innerText = `$${totalLostRevenue.toLocaleString()}`;
+
                 document.getElementById('gmail-status').innerText = syncStatus.gmail_sync_status;
                 
                 const statusColor = syncStatus.gmail_sync_status === 'Ready for Sync' ? 'text-green-600' : 'text-amber-600';
@@ -35,6 +39,7 @@
                                 ${lead.lead_score}
                             </span>
                         </td>
+                        <td class="px-6 py-4 text-sm font-semibold text-red-600">$${(lead.estimated_monthly_lost_revenue || 0).toLocaleString()}</td>
                         <td class="px-6 py-4 text-sm text-gray-500">${lead.location}</td>
                         <td class="px-6 py-4">
                             <a href="${lead.website}" target="_blank" class="text-blue-600 hover:underline">Visit Site</a>
@@ -63,7 +68,7 @@
     </nav>
 
     <div class="pt-20 px-4">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
             <!-- Metric Card 1 -->
             <div class="bg-white shadow rounded-lg p-4 sm:p-6 xl:p-8">
                 <div class="flex items-center">
@@ -83,6 +88,15 @@
                 </div>
             </div>
             <!-- Metric Card 3 -->
+            <div class="bg-white shadow rounded-lg p-4 sm:p-6 xl:p-8">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <span class="text-2xl sm:text-3xl leading-none font-bold text-amber-600" id="lost-revenue">$0</span>
+                        <h3 class="text-base font-normal text-gray-500">Est. Monthly Lost Revenue</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Metric Card 4 -->
             <div class="bg-white shadow rounded-lg p-4 sm:p-6 xl:p-8">
                 <div class="flex items-center">
                     <div class="flex-shrink-0">
@@ -110,6 +124,7 @@
                                         <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Company</th>
                                         <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Contact</th>
                                         <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Score</th>
+                                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Lost Revenue (Mo)</th>
                                         <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Location</th>
                                         <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Link</th>
                                     </tr>
