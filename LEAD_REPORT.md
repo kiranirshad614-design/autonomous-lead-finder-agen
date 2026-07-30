@@ -101,8 +101,10 @@
 | Integration | Status | Notes |
 |-------------|--------|-------|
 | Google Sheets | CSV Ready | `hot_leads_google_sheets.csv` generated; gws CLI requires `gws auth login` |
-| Gmail Drafts | Email Content Ready | Drafts saved to `email_drafts.json`; Gmail connector currently disabled |
-| GitHub | Code Packaged | All scripts + README in `github_package/` directory |
+| Gmail Drafts | **Optional Sync Active** | Drafts sync to Gmail via `email_drafts.py` when connector is active |
+| GitHub | **Active** | Pipeline auto-commits and pushes all changes to main branch |
+| Dashboard | **Active** | `index.html` (Tailwind CSS) for metric visualization |
+| Deduplication | **Active** | `seen_leads.json` ensures no duplicate processing of domains |
 
 ---
 
@@ -119,6 +121,8 @@
 | `full_pipeline_leads.csv` | All 15 leads with full scoring data |
 | `email_drafts.json` | All generated email drafts |
 | `scored_leads.json` | Complete scored lead data |
+| `index.html` | Tailwind CSS Dashboard |
+| `seen_leads.json` | Deduplication database |
 
 ---
 
