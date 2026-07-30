@@ -1,12 +1,13 @@
 {
   "hot_leads": [
     {
+      "estimated_monthly_lost_revenue": 5500,
       "company": "Pioneer Mortgage Funding",
       "dm": "Gerald Cugno",
       "title": "President and Owner",
       "location": "Florida",
       "website": "https://yourkey.com/",
-      "lead_score": 100,
+      "lead_score": 89,
       "pain_points": [
         "No live chat or AI chatbot on website - missing 24/7 lead capture opportunity",
         "No mobile optimization detected - poor experience for mobile visitors",
@@ -15,7 +16,6 @@
         "No Google Reviews displayed on website - missing trust signals"
       ],
       "scoring_reasons": [
-        "No chatbot = losing leads 24/7 (CRITICAL)",
         "Slow site speed = high bounce rate (CRITICAL)",
         "No mobile optimization = losing 60%+ traffic (HIGH)",
         "No social media = invisible to prospects (MED)",
@@ -39,12 +39,13 @@
       }
     },
     {
+      "estimated_monthly_lost_revenue": 5500,
       "company": "Texas Premier Mortgage",
       "dm": "Owner",
       "title": "Owner",
       "location": "Houston, TX",
       "website": "https://www.txpremiermortgage.com/",
-      "lead_score": 100,
+      "lead_score": 89,
       "pain_points": [
         "No live chat or AI chatbot on website - missing 24/7 lead capture opportunity",
         "No mobile optimization detected - poor experience for mobile visitors",
@@ -53,7 +54,6 @@
         "No Google Reviews displayed on website - missing trust signals"
       ],
       "scoring_reasons": [
-        "No chatbot = losing leads 24/7 (CRITICAL)",
         "Slow site speed = high bounce rate (CRITICAL)",
         "No mobile optimization = losing 60%+ traffic (HIGH)",
         "No social media = invisible to prospects (MED)",
@@ -77,75 +77,7 @@
       }
     },
     {
-      "company": "Mortgage Expert",
-      "dm": "Shahram Sondi",
-      "title": "Broker-Owner",
-      "location": "Orlando, FL",
-      "website": "https://mortgageexpert.com/",
-      "lead_score": 89,
-      "pain_points": [
-        "No live chat or AI chatbot on website - missing 24/7 lead capture opportunity",
-        "Slow website load time (4743ms) - losing impatient leads",
-        "No Google Reviews displayed on website - missing trust signals"
-      ],
-      "scoring_reasons": [
-        "No chatbot = losing leads 24/7 (CRITICAL)",
-        "Slow site speed = high bounce rate (CRITICAL)",
-        "No reviews on site = trust gap (MED)",
-        "3 pain points = clear need",
-        "Only 2 review platforms - leaving reviews on table",
-        "Independent business - decision agility",
-        "Has existing website - ready for upgrade",
-        "Slow infrastructure - needs modern solution",
-        "Direct decision maker identified",
-        "Active online = reachable",
-        "Competitive TX/FL market = urgency"
-      ],
-      "load_time_ms": 4743,
-      "has_chatbot": false,
-      "is_hot": true,
-      "google_review_data": {
-        "google_rating": 5.0,
-        "google_count": 100,
-        "platforms": 2
-      }
-    },
-    {
-      "company": "SI Real Estate Investments",
-      "dm": "Nibal Elsaadi",
-      "title": "Broker Associate",
-      "location": "Tampa, FL",
-      "website": "https://www.sirealestateinvestments.com/",
-      "lead_score": 87,
-      "pain_points": [
-        "No live chat or AI chatbot on website - missing 24/7 lead capture opportunity",
-        "Slow website load time (7739ms) - losing impatient leads",
-        "No social media links found - weak digital presence",
-        "No Google Reviews displayed on website - missing trust signals"
-      ],
-      "scoring_reasons": [
-        "No chatbot = losing leads 24/7 (CRITICAL)",
-        "Slow site speed = high bounce rate (CRITICAL)",
-        "No social media = invisible to prospects (MED)",
-        "No reviews on site = trust gap (MED)",
-        "4+ pain points = compounding urgency",
-        "Rating 4.7 - can improve with review mgmt",
-        "Independent business - decision agility",
-        "Has existing website - ready for upgrade",
-        "Slow infrastructure - needs modern solution",
-        "Active online = reachable",
-        "Competitive TX/FL market = urgency"
-      ],
-      "load_time_ms": 7739,
-      "has_chatbot": false,
-      "is_hot": true,
-      "google_review_data": {
-        "google_rating": 4.7,
-        "google_count": 168,
-        "platforms": 3
-      }
-    },
-    {
+      "estimated_monthly_lost_revenue": 3000,
       "company": "Matador Lending",
       "dm": "Founding Team",
       "title": "Mortgage Broker Owner",
@@ -181,6 +113,7 @@
   ],
   "all_scored": [
     {
+      "estimated_monthly_lost_revenue": 3000,
       "company": "Florida Homes Realty & Mortgage",
       "dm": "James Angelo",
       "title": "Founder, CEO, Broker",
@@ -211,6 +144,7 @@
       }
     },
     {
+      "estimated_monthly_lost_revenue": 0,
       "company": "HomeTrust Financing",
       "dm": "Chris Cavazos",
       "title": "Mortgage Broker/Owner",
@@ -241,6 +175,7 @@
       }
     },
     {
+      "estimated_monthly_lost_revenue": 2000,
       "company": "Future Home Loans",
       "dm": "Robert Lynn",
       "title": "CEO Founder",
@@ -270,6 +205,7 @@
       }
     },
     {
+      "estimated_monthly_lost_revenue": 3000,
       "company": "Wholesale Mortgages LLC",
       "dm": "Javier Satizabal",
       "title": "Founder, CEO",
@@ -301,6 +237,7 @@
       }
     },
     {
+      "estimated_monthly_lost_revenue": 3000,
       "company": "The Orlicki Group",
       "dm": "Oliver Orlicki",
       "title": "Founder, Mortgage Loan Originator",
@@ -333,12 +270,13 @@
       }
     },
     {
+      "estimated_monthly_lost_revenue": 5500,
       "company": "Pioneer Mortgage Funding",
       "dm": "Gerald Cugno",
       "title": "President and Owner",
       "location": "Florida",
       "website": "https://yourkey.com/",
-      "lead_score": 100,
+      "lead_score": 89,
       "pain_points": [
         "No live chat or AI chatbot on website - missing 24/7 lead capture opportunity",
         "No mobile optimization detected - poor experience for mobile visitors",
@@ -347,7 +285,6 @@
         "No Google Reviews displayed on website - missing trust signals"
       ],
       "scoring_reasons": [
-        "No chatbot = losing leads 24/7 (CRITICAL)",
         "Slow site speed = high bounce rate (CRITICAL)",
         "No mobile optimization = losing 60%+ traffic (HIGH)",
         "No social media = invisible to prospects (MED)",
@@ -371,6 +308,7 @@
       }
     },
     {
+      "estimated_monthly_lost_revenue": 3000,
       "company": "Matador Lending",
       "dm": "Founding Team",
       "title": "Mortgage Broker Owner",
@@ -404,6 +342,7 @@
       }
     },
     {
+      "estimated_monthly_lost_revenue": 3000,
       "company": "Turn-Key Mortgage Inc.",
       "dm": "Jennifer Brown",
       "title": "Mortgage Broker/Owner",
@@ -436,6 +375,7 @@
       }
     },
     {
+      "estimated_monthly_lost_revenue": 3000,
       "company": "Rainmaker Realty",
       "dm": "Jeanne",
       "title": "Founder, Owner",
@@ -467,12 +407,13 @@
       }
     },
     {
+      "estimated_monthly_lost_revenue": 5500,
       "company": "Texas Premier Mortgage",
       "dm": "Owner",
       "title": "Owner",
       "location": "Houston, TX",
       "website": "https://www.txpremiermortgage.com/",
-      "lead_score": 100,
+      "lead_score": 89,
       "pain_points": [
         "No live chat or AI chatbot on website - missing 24/7 lead capture opportunity",
         "No mobile optimization detected - poor experience for mobile visitors",
@@ -481,7 +422,6 @@
         "No Google Reviews displayed on website - missing trust signals"
       ],
       "scoring_reasons": [
-        "No chatbot = losing leads 24/7 (CRITICAL)",
         "Slow site speed = high bounce rate (CRITICAL)",
         "No mobile optimization = losing 60%+ traffic (HIGH)",
         "No social media = invisible to prospects (MED)",
@@ -505,6 +445,7 @@
       }
     },
     {
+      "estimated_monthly_lost_revenue": 3000,
       "company": "First Commerce Financial",
       "dm": "Kirk Chivas",
       "title": "Co-Founder",
@@ -536,6 +477,7 @@
       }
     },
     {
+      "estimated_monthly_lost_revenue": 3000,
       "company": "Realty Texas",
       "dm": "Jack Stapleton",
       "title": "Co-Founder, Broker",
@@ -568,6 +510,7 @@
       }
     },
     {
+      "estimated_monthly_lost_revenue": 3000,
       "company": "Networth Builders",
       "dm": "Wale Lawal",
       "title": "Founder",
@@ -601,19 +544,19 @@
       }
     },
     {
+      "estimated_monthly_lost_revenue": 3000,
       "company": "Mortgage Expert",
       "dm": "Shahram Sondi",
       "title": "Broker-Owner",
       "location": "Orlando, FL",
       "website": "https://mortgageexpert.com/",
-      "lead_score": 89,
+      "lead_score": 71,
       "pain_points": [
         "No live chat or AI chatbot on website - missing 24/7 lead capture opportunity",
         "Slow website load time (4743ms) - losing impatient leads",
         "No Google Reviews displayed on website - missing trust signals"
       ],
       "scoring_reasons": [
-        "No chatbot = losing leads 24/7 (CRITICAL)",
         "Slow site speed = high bounce rate (CRITICAL)",
         "No reviews on site = trust gap (MED)",
         "3 pain points = clear need",
@@ -627,7 +570,7 @@
       ],
       "load_time_ms": 4743,
       "has_chatbot": false,
-      "is_hot": true,
+      "is_hot": false,
       "google_review_data": {
         "google_rating": 5.0,
         "google_count": 100,
@@ -635,12 +578,13 @@
       }
     },
     {
+      "estimated_monthly_lost_revenue": 3000,
       "company": "SI Real Estate Investments",
       "dm": "Nibal Elsaadi",
       "title": "Broker Associate",
       "location": "Tampa, FL",
       "website": "https://www.sirealestateinvestments.com/",
-      "lead_score": 87,
+      "lead_score": 69,
       "pain_points": [
         "No live chat or AI chatbot on website - missing 24/7 lead capture opportunity",
         "Slow website load time (7739ms) - losing impatient leads",
@@ -648,7 +592,6 @@
         "No Google Reviews displayed on website - missing trust signals"
       ],
       "scoring_reasons": [
-        "No chatbot = losing leads 24/7 (CRITICAL)",
         "Slow site speed = high bounce rate (CRITICAL)",
         "No social media = invisible to prospects (MED)",
         "No reviews on site = trust gap (MED)",
@@ -662,7 +605,7 @@
       ],
       "load_time_ms": 7739,
       "has_chatbot": false,
-      "is_hot": true,
+      "is_hot": false,
       "google_review_data": {
         "google_rating": 4.7,
         "google_count": 168,

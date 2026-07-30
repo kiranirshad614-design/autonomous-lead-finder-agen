@@ -21,20 +21,31 @@ for lead in hot_leads:
     pain_points = lead['pain_points']
     location = lead['location']
     
-    # Determine primary hook based on biggest pain point
-    if "No chatbot" in str(pain_points):
-        hook = f"I noticed {company} doesn't have an AI chatbot or live chat on your website. In the {location} market, 70% of potential homebuyers abandon sites that don't offer instant answers after hours."
-    elif "Slow website" in str(pain_points):
-        hook = f"I was looking at your website in {location} and noticed it's loading quite slowly. In the competitive {location} real estate market, a slow site can cost you up to 40% of mobile traffic before they even see your listings."
-    elif "No mobile optimization" in str(pain_points):
-        hook = f"I noticed your website isn't fully optimized for mobile devices. With over 60% of home searches happening on phones in {location}, this could be pushing potential buyers straight to your competitors."
+    # Determine primary hook based on biggest automation gap
+    automation_gaps = []
+    if not lead.get("has_chatbot", True):
+        automation_gaps.append("24/7 AI lead capture widget/chatbot")
+    if not lead.get("has_booking_calendar", True):
+        automation_gaps.append("instant booking calendar")
+    if not lead.get("has_auto_responder", True):
+        automation_gaps.append("automated lead confirmation / instant auto-responder")
+
+    hook_intro = f"I was researching top real estate and mortgage professionals in {location} and came across {company}."
+    if automation_gaps:
+        hook = f"I noticed {company} is missing a critical piece of your lead automation: no {', '.join(automation_gaps)}. This often leads to an estimated ${lead.get('estimated_monthly_lost_revenue', 0):,.0f} in lost monthly revenue."
     else:
-        hook = f"I was researching top real estate and mortgage professionals in {location} and came across {company}."
+        hook = hook_intro
+
     
-    # Secondary pain point
+    # Secondary pain point (if any other significant pain points exist)
     secondary_hook = ""
-    if "No Google Reviews displayed" in str(pain_points):
-        secondary_hook = " I also noticed you have great reviews, but they aren't currently embedded on your homepage to build instant trust with new visitors."
+    if any("Slow website load time" in pp for pp in pain_points):
+        secondary_hook += " I also noticed your website loads slowly, which can deter potential clients."
+    if any("No mobile optimization" in pp for pp in pain_points):
+        secondary_hook += " Additionally, your site isn't fully mobile-optimized, potentially losing a large segment of your audience."
+    if any("No Google Reviews displayed" in pp for pp in pain_points):
+        secondary_hook += " You have great reviews, but they aren't currently embedded on your homepage to build instant trust with new visitors."
+
     
     # Email body
     subject = f"Quick question about {company}'s website / Lead capture"
@@ -43,13 +54,13 @@ for lead in hot_leads:
 
 {hook}{secondary_hook}
 
-We specialize in helping independent brokerages and mortgage firms in Texas and Florida install custom AI chatbots and speed up their websites to capture more leads automatically. We recently helped a similar broker in the area increase their after-hours lead capture by 35% without hiring more staff.
+At Vibe Studio AI, we specialize in 'Full-Funnel SDR & Lead Response Automation' for real estate and mortgage agencies like yours. Our automated 60-second lead follow-ups have been shown to increase booking rates by over 300%.
 
-Are you open to a quick 5-minute chat this week to see if we can do the same for {company}?
+We help businesses like {company} convert more leads into appointments, ensuring no potential client falls through the cracks. Would you be open to a brief 15-minute call to explore how we can help you capture that estimated ${lead.get('estimated_monthly_lost_revenue', 0):,.0f} in lost monthly revenue and significantly boost your booking rates?
 
 Best,
 
-Autonomous Lead Finder Agent"""
+[Your Name/Vibe Studio AI Team]"""
 
     drafts.append({
         "company": company,

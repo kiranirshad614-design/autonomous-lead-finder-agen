@@ -40,22 +40,35 @@ def score_lead(audit, reviews):
     reasons = []
     pain_points = audit.get("pain_points", [])
     pain_count = len(pain_points)
+
+    # Estimated business metrics (placeholders - ideally these would come from lead research)
+    AVG_DEAL_VALUE = 5000  # Average commission/profit per deal for real estate/mortgage
+    MONTHLY_LEAD_VOLUME = 100 # Estimated monthly website visitors / leads
+    CONVERSION_RATE_BASELINE = 0.02 # 2% conversion rate baseline (visitors to clients)
+    lost_revenue_monthly = 0
+
     
     # ===== PAIN POINT SEVERITY (max 40 pts) =====
     # No chatbot = DIRECT revenue loss every night
-    if any("No live chat or AI chatbot" in pp for pp in pain_points):
+    if any("No 24/7 AI lead capture widget/chatbot" in pp for pp in pain_points):
         score += 18
-        reasons.append("No chatbot = losing leads 24/7 (CRITICAL)")
+        reasons.append("No 24/7 AI lead capture widget/chatbot = losing leads 24/7 (CRITICAL)")
+        lost_revenue_monthly += MONTHLY_LEAD_VOLUME * CONVERSION_RATE_BASELINE * AVG_DEAL_VALUE * 0.30 # 30% conversion drop
+
     
     # Slow website = visitors bouncing before seeing offer
     if any("Slow website load time" in pp for pp in pain_points):
         score += 12
         reasons.append("Slow site speed = high bounce rate (CRITICAL)")
+        lost_revenue_monthly += MONTHLY_LEAD_VOLUME * CONVERSION_RATE_BASELINE * AVG_DEAL_VALUE * 0.20 # 20% conversion drop
+
     
     # No mobile optimization = losing majority of traffic
     if any("No mobile optimization" in pp for pp in pain_points):
         score += 10
         reasons.append("No mobile optimization = losing 60%+ traffic (HIGH)")
+        lost_revenue_monthly += MONTHLY_LEAD_VOLUME * CONVERSION_RATE_BASELINE * AVG_DEAL_VALUE * 0.25 # 25% conversion drop
+
     
     # Outdated tech = credibility issue
     if any("Outdated web technology" in pp for pp in pain_points):
@@ -71,6 +84,8 @@ def score_lead(audit, reviews):
     if any("No Google Reviews displayed" in pp for pp in pain_points):
         score += 6
         reasons.append("No reviews on site = trust gap (MED)")
+        lost_revenue_monthly += MONTHLY_LEAD_VOLUME * CONVERSION_RATE_BASELINE * AVG_DEAL_VALUE * 0.10 # 10% conversion drop
+
     
     # Bonus for MULTIPLE pain points (compounding urgency)
     if pain_count >= 4:
@@ -139,10 +154,22 @@ def score_lead(audit, reviews):
         score += 5
         reasons.append("Competitive TX/FL market = urgency")
     
+    # New automation gap pain points
+    if any("No instant booking calendar" in pp for pp in pain_points):
+        score += 15 # High impact
+        reasons.append("No instant booking calendar = lost appointments (CRITICAL)")
+        lost_revenue_monthly += MONTHLY_LEAD_VOLUME * CONVERSION_RATE_BASELINE * AVG_DEAL_VALUE * 0.25 # 25% conversion drop
+
+    if any("No automated lead confirmation" in pp for pp in pain_points):
+        score += 10 # Medium impact
+        reasons.append("No automated lead confirmation = leads go cold (HIGH)")
+        lost_revenue_monthly += MONTHLY_LEAD_VOLUME * CONVERSION_RATE_BASELINE * AVG_DEAL_VALUE * 0.15 # 15% conversion drop
+
     # Cap at 100
     score = min(score, 100)
     
-    return score, reasons
+    return score, reasons, round(lost_revenue_monthly)
+
 
 
 # Score all leads
@@ -152,9 +179,10 @@ all_scored = []
 for audit in audit_results:
     company = audit["company"]
     reviews = review_data.get(company, None)
-    score, reasons = score_lead(audit, reviews)
+    score, reasons, lost_revenue = score_lead(audit, reviews)
     
     scored_lead = {
+        "estimated_monthly_lost_revenue": lost_revenue,
         "company": company,
         "dm": audit["dm"],
         "title": audit["title"],

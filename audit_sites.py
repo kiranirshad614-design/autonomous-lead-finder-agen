@@ -70,7 +70,9 @@ def audit_website(lead):
         "has_social_links": False,
         "has_google_reviews_embed": False,
         "pain_points": [],
-        "audit_notes": ""
+        "audit_notes": "",
+        "has_booking_calendar": False,
+        "has_auto_responder": False
     }
     
     try:
@@ -88,12 +90,13 @@ def audit_website(lead):
         soup = BeautifulSoup(response.content, 'html.parser')
         html = response.text.lower()
         
-        # Check for chatbot/live chat
+        # Check for chatbot/live chat and auto-responders
         chatbot_keywords = ['tawk', 'intercom', 'drift', 'zendesk', 'livechat', 'crisp', 'olark', 'chatbot', 'chat-widget', 'live-chat', 'jivosite', 'tidio', 'comm100', 'freshchat', 'hubspot_chat', 'hubspotconversations', 'zopim', 'smartsupp', 'chatra']
         for kw in chatbot_keywords:
             if kw in html:
                 results["has_chatbot"] = True
                 results["has_live_chat"] = True
+                results["has_auto_responder"] = True # Assume if chatbot, then auto-responder
                 break
         
         # Check specifically for <script> tags with chat services
@@ -103,6 +106,7 @@ def audit_website(lead):
             if any(kw in src for kw in chatbot_keywords):
                 results["has_chatbot"] = True
                 results["has_live_chat"] = True
+                results["has_auto_responder"] = True # Assume if chatbot, then auto-responder
                 break
         
         # Check for mobile viewport
@@ -142,10 +146,23 @@ def audit_website(lead):
                 results["has_google_reviews_embed"] = True
                 break
         
+        # Check for booking calendars
+        booking_calendar_keywords = ["calendly.com", "acuityscheduling.com", "secure.scheduleonce.com", "honeybook.com/widget/", "setmore.com", "youcanbook.me", "booksteam.com", "appointy.com", "timetrade.com", "vcita.com/scheduler", "simplybook.me", "bookingpage.com", "schedule.oncehub.com", "gohighlevel.com/widget"]
+        for kw in booking_calendar_keywords:
+            if kw in html:
+                results["has_booking_calendar"] = True
+                break
+
         # Generate pain points
         pain_points = []
         if not results["has_chatbot"]:
-            pain_points.append("No live chat or AI chatbot on website - missing 24/7 lead capture opportunity")
+            pain_points.append("No 24/7 AI lead capture widget/chatbot - missing instant engagement and lead qualification")
+        
+        if not results["has_booking_calendar"]:
+            pain_points.append("No instant booking calendar (Calendly, Acuity, GHL) - friction in scheduling and lost appointments")
+
+        if not results["has_auto_responder"]:
+            pain_points.append("No automated lead confirmation / instant auto-responder - leads go cold waiting for a reply")
         
         if not results["has_meta_viewport"] and not results["has_mobile_optimization"]:
             pain_points.append("No mobile optimization detected - poor experience for mobile visitors")
@@ -168,10 +185,24 @@ def audit_website(lead):
             pain_points.append("No Google Reviews displayed on website - missing trust signals")
         
         results["pain_points"] = pain_points
+
+        # Update audit notes with new automation gaps
+        automation_gaps = []
+        if not results["has_chatbot"]:
+            automation_gaps.append("No AI Chatbot")
+        if not results["has_booking_calendar"]:
+            automation_gaps.append("No Booking Calendar")
+        if not results["has_auto_responder"]:
+            automation_gaps.append("No Auto-Responder")
+
+        if automation_gaps:
+            results["audit_notes"] += f"; Automation Gaps: {', '.join(automation_gaps)}"
         
         # Summary note
         if pain_points:
             results["audit_notes"] = f"Found {len(pain_points)} pain point(s): {'; '.join(pain_points[:2])}"
+            if automation_gaps:
+                results["audit_notes"] += f"; Automation Gaps: {', '.join(automation_gaps)}"
         else:
             results["audit_notes"] = "Website appears well-optimized with no major pain points detected"
             
