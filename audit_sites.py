@@ -13,10 +13,24 @@ from urllib.parse import urljoin
 import time
 import json
 import warnings
+import os
 warnings.filterwarnings('ignore')
 
+# Path to deduplication file
+SEEN_LEADS_FILE = 'seen_leads.json'
+
+def load_seen_leads():
+    if os.path.exists(SEEN_LEADS_FILE):
+        with open(SEEN_LEADS_FILE, 'r') as f:
+            return set(json.load(f))
+    return set()
+
+def save_seen_leads(seen_leads):
+    with open(SEEN_LEADS_FILE, 'w') as f:
+        json.dump(list(seen_leads), f, indent=2)
+
 # Websites to audit
-leads = [
+all_leads = [
     {"company": "Florida Homes Realty & Mortgage", "url": "https://www.joinfhrm.com/", "dm": "James Angelo", "title": "Founder, CEO, Broker", "location": "Jacksonville, FL"},
     {"company": "HomeTrust Financing", "url": "https://hometrustfinancing.com/", "dm": "Chris Cavazos", "title": "Mortgage Broker/Owner", "location": "Sugar Land, TX"},
     {"company": "Future Home Loans", "url": "https://future.loans/", "dm": "Robert Lynn", "title": "CEO Founder", "location": "Jacksonville Beach, FL"},
@@ -169,17 +183,30 @@ def audit_website(lead):
     return results
 
 # Run audits
+seen_leads = load_seen_leads()
 all_results = []
-for lead in leads:
+new_leads_count = 0
+
+for lead in all_leads:
+    domain = lead['url'].split('//')[-1].split('/')[0].replace('www.', '')
+    if domain in seen_leads:
+        print(f"Skipping {lead['company']} (already processed).")
+        continue
+    
     print(f"Auditing: {lead['company']}...")
     result = audit_website(lead)
     all_results.append(result)
+    seen_leads.add(domain)
+    new_leads_count += 1
     print(f"  Pain points found: {len(result['pain_points'])}")
     for pp in result['pain_points']:
         print(f"    - {pp}")
 
 # Save results
-with open('audit_data/audit_results.json', 'w') as f:
-    json.dump(all_results, f, indent=2)
-
-print(f"\nAudit complete! Results saved for {len(all_results)} websites.")
+if all_results:
+    with open('audit_data/audit_results.json', 'w') as f:
+        json.dump(all_results, f, indent=2)
+    save_seen_leads(seen_leads)
+    print(f"\nAudit complete! Results saved for {new_leads_count} new websites.")
+else:
+    print("\nNo new leads to audit.")

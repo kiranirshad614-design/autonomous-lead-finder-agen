@@ -1,21 +1,22 @@
 {
   "hot_leads": [
     {
-      "company": "Texas Premier Mortgage",
-      "dm": "Owner",
-      "title": "Owner",
-      "location": "Houston, TX",
-      "website": "https://www.txpremiermortgage.com/",
-      "lead_score": 90,
+      "company": "Pioneer Mortgage Funding",
+      "dm": "Gerald Cugno",
+      "title": "President and Owner",
+      "location": "Florida",
+      "website": "https://yourkey.com/",
+      "lead_score": 100,
       "pain_points": [
         "No live chat or AI chatbot on website - missing 24/7 lead capture opportunity",
         "No mobile optimization detected - poor experience for mobile visitors",
-        "Moderate load time (2620ms) - could be faster for better UX",
+        "Slow website load time (6470ms) - losing impatient leads",
         "No social media links found - weak digital presence",
         "No Google Reviews displayed on website - missing trust signals"
       ],
       "scoring_reasons": [
         "No chatbot = losing leads 24/7 (CRITICAL)",
+        "Slow site speed = high bounce rate (CRITICAL)",
         "No mobile optimization = losing 60%+ traffic (HIGH)",
         "No social media = invisible to prospects (MED)",
         "No reviews on site = trust gap (MED)",
@@ -23,17 +24,90 @@
         "Only 1 review platforms - leaving reviews on table",
         "Independent business - decision agility",
         "Has existing website - ready for upgrade",
+        "Slow infrastructure - needs modern solution",
         "Direct decision maker identified",
         "Active online = reachable",
         "Competitive TX/FL market = urgency"
       ],
-      "load_time_ms": 2620,
+      "load_time_ms": 6470,
+      "has_chatbot": false,
+      "is_hot": true,
+      "google_review_data": {
+        "google_rating": 4.9,
+        "google_count": 200,
+        "platforms": 1
+      }
+    },
+    {
+      "company": "Texas Premier Mortgage",
+      "dm": "Owner",
+      "title": "Owner",
+      "location": "Houston, TX",
+      "website": "https://www.txpremiermortgage.com/",
+      "lead_score": 100,
+      "pain_points": [
+        "No live chat or AI chatbot on website - missing 24/7 lead capture opportunity",
+        "No mobile optimization detected - poor experience for mobile visitors",
+        "Slow website load time (4097ms) - losing impatient leads",
+        "No social media links found - weak digital presence",
+        "No Google Reviews displayed on website - missing trust signals"
+      ],
+      "scoring_reasons": [
+        "No chatbot = losing leads 24/7 (CRITICAL)",
+        "Slow site speed = high bounce rate (CRITICAL)",
+        "No mobile optimization = losing 60%+ traffic (HIGH)",
+        "No social media = invisible to prospects (MED)",
+        "No reviews on site = trust gap (MED)",
+        "4+ pain points = compounding urgency",
+        "Only 1 review platforms - leaving reviews on table",
+        "Independent business - decision agility",
+        "Has existing website - ready for upgrade",
+        "Slow infrastructure - needs modern solution",
+        "Direct decision maker identified",
+        "Active online = reachable",
+        "Competitive TX/FL market = urgency"
+      ],
+      "load_time_ms": 4097,
       "has_chatbot": false,
       "is_hot": true,
       "google_review_data": {
         "google_rating": 4.9,
         "google_count": 500,
         "platforms": 1
+      }
+    },
+    {
+      "company": "Mortgage Expert",
+      "dm": "Shahram Sondi",
+      "title": "Broker-Owner",
+      "location": "Orlando, FL",
+      "website": "https://mortgageexpert.com/",
+      "lead_score": 89,
+      "pain_points": [
+        "No live chat or AI chatbot on website - missing 24/7 lead capture opportunity",
+        "Slow website load time (4743ms) - losing impatient leads",
+        "No Google Reviews displayed on website - missing trust signals"
+      ],
+      "scoring_reasons": [
+        "No chatbot = losing leads 24/7 (CRITICAL)",
+        "Slow site speed = high bounce rate (CRITICAL)",
+        "No reviews on site = trust gap (MED)",
+        "3 pain points = clear need",
+        "Only 2 review platforms - leaving reviews on table",
+        "Independent business - decision agility",
+        "Has existing website - ready for upgrade",
+        "Slow infrastructure - needs modern solution",
+        "Direct decision maker identified",
+        "Active online = reachable",
+        "Competitive TX/FL market = urgency"
+      ],
+      "load_time_ms": 4743,
+      "has_chatbot": false,
+      "is_hot": true,
+      "google_review_data": {
+        "google_rating": 5.0,
+        "google_count": 100,
+        "platforms": 2
       }
     },
     {
@@ -45,7 +119,7 @@
       "lead_score": 87,
       "pain_points": [
         "No live chat or AI chatbot on website - missing 24/7 lead capture opportunity",
-        "Slow website load time (7632ms) - losing impatient leads",
+        "Slow website load time (7739ms) - losing impatient leads",
         "No social media links found - weak digital presence",
         "No Google Reviews displayed on website - missing trust signals"
       ],
@@ -62,13 +136,46 @@
         "Active online = reachable",
         "Competitive TX/FL market = urgency"
       ],
-      "load_time_ms": 7632,
+      "load_time_ms": 7739,
       "has_chatbot": false,
       "is_hot": true,
       "google_review_data": {
         "google_rating": 4.7,
         "google_count": 168,
         "platforms": 3
+      }
+    },
+    {
+      "company": "Matador Lending",
+      "dm": "Founding Team",
+      "title": "Mortgage Broker Owner",
+      "location": "Houston, TX",
+      "website": "https://www.matadorlending.com/",
+      "lead_score": 81,
+      "pain_points": [
+        "Slow website load time (4392ms) - losing impatient leads",
+        "No Google Reviews displayed on website - missing trust signals"
+      ],
+      "scoring_reasons": [
+        "Slow site speed = high bounce rate (CRITICAL)",
+        "No reviews on site = trust gap (MED)",
+        "Only 30 reviews - needs review automation",
+        "Rating 4.5 - can improve with review mgmt",
+        "Only 1 review platforms - leaving reviews on table",
+        "Independent business - decision agility",
+        "Has existing website - ready for upgrade",
+        "Slow infrastructure - needs modern solution",
+        "Direct decision maker identified",
+        "Active online = reachable",
+        "Competitive TX/FL market = urgency"
+      ],
+      "load_time_ms": 4392,
+      "has_chatbot": true,
+      "is_hot": true,
+      "google_review_data": {
+        "google_rating": 4.5,
+        "google_count": 30,
+        "platforms": 1
       }
     }
   ],
@@ -79,12 +186,13 @@
       "title": "Founder, CEO, Broker",
       "location": "Jacksonville, FL",
       "website": "https://www.joinfhrm.com/",
-      "lead_score": 51,
+      "lead_score": 63,
       "pain_points": [
-        "Moderate load time (3867ms) - could be faster for better UX",
+        "Slow website load time (5410ms) - losing impatient leads",
         "No Google Reviews displayed on website - missing trust signals"
       ],
       "scoring_reasons": [
+        "Slow site speed = high bounce rate (CRITICAL)",
         "No reviews on site = trust gap (MED)",
         "Independent business - decision agility",
         "Has existing website - ready for upgrade",
@@ -93,7 +201,7 @@
         "Active online = reachable",
         "Competitive TX/FL market = urgency"
       ],
-      "load_time_ms": 3867,
+      "load_time_ms": 5410,
       "has_chatbot": true,
       "is_hot": false,
       "google_review_data": {
@@ -110,7 +218,7 @@
       "website": "https://hometrustfinancing.com/",
       "lead_score": 59,
       "pain_points": [
-        "Moderate load time (2505ms) - could be faster for better UX",
+        "Moderate load time (3303ms) - could be faster for better UX",
         "No social media links found - weak digital presence"
       ],
       "scoring_reasons": [
@@ -123,7 +231,7 @@
         "Active online = reachable",
         "Competitive TX/FL market = urgency"
       ],
-      "load_time_ms": 2505,
+      "load_time_ms": 3303,
       "has_chatbot": true,
       "is_hot": false,
       "google_review_data": {
@@ -138,19 +246,21 @@
       "title": "CEO Founder",
       "location": "Jacksonville Beach, FL",
       "website": "https://future.loans/",
-      "lead_score": 45,
+      "lead_score": 62,
       "pain_points": [
-        "Moderate load time (3461ms) - could be faster for better UX"
+        "Slow website load time (5629ms) - losing impatient leads"
       ],
       "scoring_reasons": [
+        "Slow site speed = high bounce rate (CRITICAL)",
         "Only 2 review platforms - leaving reviews on table",
         "Independent business - decision agility",
         "Has existing website - ready for upgrade",
+        "Slow infrastructure - needs modern solution",
         "Direct decision maker identified",
         "Active online = reachable",
         "Competitive TX/FL market = urgency"
       ],
-      "load_time_ms": 3461,
+      "load_time_ms": 5629,
       "has_chatbot": true,
       "is_hot": false,
       "google_review_data": {
@@ -167,7 +277,7 @@
       "website": "https://www.findeasymortgages.com/",
       "lead_score": 68,
       "pain_points": [
-        "Slow website load time (4410ms) - losing impatient leads",
+        "Slow website load time (5949ms) - losing impatient leads",
         "No Google Reviews displayed on website - missing trust signals"
       ],
       "scoring_reasons": [
@@ -181,7 +291,7 @@
         "Active online = reachable",
         "Competitive TX/FL market = urgency"
       ],
-      "load_time_ms": 4410,
+      "load_time_ms": 5949,
       "has_chatbot": true,
       "is_hot": false,
       "google_review_data": {
@@ -196,22 +306,24 @@
       "title": "Founder, Mortgage Loan Originator",
       "location": "Tampa, FL",
       "website": "https://orlickigroup.com/",
-      "lead_score": 59,
+      "lead_score": 76,
       "pain_points": [
-        "Moderate load time (3179ms) - could be faster for better UX",
+        "Slow website load time (7100ms) - losing impatient leads",
         "No Google Reviews displayed on website - missing trust signals"
       ],
       "scoring_reasons": [
+        "Slow site speed = high bounce rate (CRITICAL)",
         "No reviews on site = trust gap (MED)",
         "Only 50 reviews - needs review automation",
         "Only 1 review platforms - leaving reviews on table",
         "Independent business - decision agility",
         "Has existing website - ready for upgrade",
+        "Slow infrastructure - needs modern solution",
         "Direct decision maker identified",
         "Active online = reachable",
         "Competitive TX/FL market = urgency"
       ],
-      "load_time_ms": 3179,
+      "load_time_ms": 7100,
       "has_chatbot": true,
       "is_hot": false,
       "google_review_data": {
@@ -226,28 +338,32 @@
       "title": "President and Owner",
       "location": "Florida",
       "website": "https://yourkey.com/",
-      "lead_score": 80,
+      "lead_score": 100,
       "pain_points": [
         "No live chat or AI chatbot on website - missing 24/7 lead capture opportunity",
-        "Moderate load time (3001ms) - could be faster for better UX",
+        "No mobile optimization detected - poor experience for mobile visitors",
+        "Slow website load time (6470ms) - losing impatient leads",
         "No social media links found - weak digital presence",
         "No Google Reviews displayed on website - missing trust signals"
       ],
       "scoring_reasons": [
         "No chatbot = losing leads 24/7 (CRITICAL)",
+        "Slow site speed = high bounce rate (CRITICAL)",
+        "No mobile optimization = losing 60%+ traffic (HIGH)",
         "No social media = invisible to prospects (MED)",
         "No reviews on site = trust gap (MED)",
         "4+ pain points = compounding urgency",
         "Only 1 review platforms - leaving reviews on table",
         "Independent business - decision agility",
         "Has existing website - ready for upgrade",
+        "Slow infrastructure - needs modern solution",
         "Direct decision maker identified",
         "Active online = reachable",
         "Competitive TX/FL market = urgency"
       ],
-      "load_time_ms": 3001,
+      "load_time_ms": 6470,
       "has_chatbot": false,
-      "is_hot": false,
+      "is_hot": true,
       "google_review_data": {
         "google_rating": 4.9,
         "google_count": 200,
@@ -260,12 +376,13 @@
       "title": "Mortgage Broker Owner",
       "location": "Houston, TX",
       "website": "https://www.matadorlending.com/",
-      "lead_score": 69,
+      "lead_score": 81,
       "pain_points": [
-        "Moderate load time (3917ms) - could be faster for better UX",
+        "Slow website load time (4392ms) - losing impatient leads",
         "No Google Reviews displayed on website - missing trust signals"
       ],
       "scoring_reasons": [
+        "Slow site speed = high bounce rate (CRITICAL)",
         "No reviews on site = trust gap (MED)",
         "Only 30 reviews - needs review automation",
         "Rating 4.5 - can improve with review mgmt",
@@ -277,9 +394,9 @@
         "Active online = reachable",
         "Competitive TX/FL market = urgency"
       ],
-      "load_time_ms": 3917,
+      "load_time_ms": 4392,
       "has_chatbot": true,
-      "is_hot": false,
+      "is_hot": true,
       "google_review_data": {
         "google_rating": 4.5,
         "google_count": 30,
@@ -294,7 +411,7 @@
       "website": "https://turnkeymortgage.net/",
       "lead_score": 76,
       "pain_points": [
-        "Slow website load time (5035ms) - losing impatient leads",
+        "Slow website load time (8722ms) - losing impatient leads",
         "No Google Reviews displayed on website - missing trust signals"
       ],
       "scoring_reasons": [
@@ -309,7 +426,7 @@
         "Active online = reachable",
         "Competitive TX/FL market = urgency"
       ],
-      "load_time_ms": 5035,
+      "load_time_ms": 8722,
       "has_chatbot": true,
       "is_hot": false,
       "google_review_data": {
@@ -326,7 +443,7 @@
       "website": "https://www.rainmakerrealty.com/",
       "lead_score": 71,
       "pain_points": [
-        "Slow website load time (5196ms) - losing impatient leads",
+        "Slow website load time (6819ms) - losing impatient leads",
         "No Google Reviews displayed on website - missing trust signals"
       ],
       "scoring_reasons": [
@@ -340,7 +457,7 @@
         "Active online = reachable",
         "Competitive TX/FL market = urgency"
       ],
-      "load_time_ms": 5196,
+      "load_time_ms": 6819,
       "has_chatbot": true,
       "is_hot": false,
       "google_review_data": {
@@ -355,16 +472,17 @@
       "title": "Owner",
       "location": "Houston, TX",
       "website": "https://www.txpremiermortgage.com/",
-      "lead_score": 90,
+      "lead_score": 100,
       "pain_points": [
         "No live chat or AI chatbot on website - missing 24/7 lead capture opportunity",
         "No mobile optimization detected - poor experience for mobile visitors",
-        "Moderate load time (2620ms) - could be faster for better UX",
+        "Slow website load time (4097ms) - losing impatient leads",
         "No social media links found - weak digital presence",
         "No Google Reviews displayed on website - missing trust signals"
       ],
       "scoring_reasons": [
         "No chatbot = losing leads 24/7 (CRITICAL)",
+        "Slow site speed = high bounce rate (CRITICAL)",
         "No mobile optimization = losing 60%+ traffic (HIGH)",
         "No social media = invisible to prospects (MED)",
         "No reviews on site = trust gap (MED)",
@@ -372,11 +490,12 @@
         "Only 1 review platforms - leaving reviews on table",
         "Independent business - decision agility",
         "Has existing website - ready for upgrade",
+        "Slow infrastructure - needs modern solution",
         "Direct decision maker identified",
         "Active online = reachable",
         "Competitive TX/FL market = urgency"
       ],
-      "load_time_ms": 2620,
+      "load_time_ms": 4097,
       "has_chatbot": false,
       "is_hot": true,
       "google_review_data": {
@@ -391,12 +510,13 @@
       "title": "Co-Founder",
       "location": "Jacksonville, FL",
       "website": "https://www.firstcommercefinancial.com/",
-      "lead_score": 56,
+      "lead_score": 68,
       "pain_points": [
-        "Moderate load time (3893ms) - could be faster for better UX",
+        "Slow website load time (18245ms) - losing impatient leads",
         "No Google Reviews displayed on website - missing trust signals"
       ],
       "scoring_reasons": [
+        "Slow site speed = high bounce rate (CRITICAL)",
         "No reviews on site = trust gap (MED)",
         "Only 1 review platforms - leaving reviews on table",
         "Independent business - decision agility",
@@ -406,7 +526,7 @@
         "Active online = reachable",
         "Competitive TX/FL market = urgency"
       ],
-      "load_time_ms": 3893,
+      "load_time_ms": 18245,
       "has_chatbot": true,
       "is_hot": false,
       "google_review_data": {
@@ -421,12 +541,13 @@
       "title": "Co-Founder, Broker",
       "location": "Texas",
       "website": "https://www.realtytexas.com/",
-      "lead_score": 61,
+      "lead_score": 73,
       "pain_points": [
-        "Moderate load time (3662ms) - could be faster for better UX",
+        "Slow website load time (4893ms) - losing impatient leads",
         "No Google Reviews displayed on website - missing trust signals"
       ],
       "scoring_reasons": [
+        "Slow site speed = high bounce rate (CRITICAL)",
         "No reviews on site = trust gap (MED)",
         "Rating 4.7 - can improve with review mgmt",
         "Only 1 review platforms - leaving reviews on table",
@@ -437,7 +558,7 @@
         "Active online = reachable",
         "Competitive TX/FL market = urgency"
       ],
-      "load_time_ms": 3662,
+      "load_time_ms": 4893,
       "has_chatbot": true,
       "is_hot": false,
       "google_review_data": {
@@ -452,13 +573,14 @@
       "title": "Founder",
       "location": "Houston, TX",
       "website": "https://networthbuilders.com/",
-      "lead_score": 62,
+      "lead_score": 74,
       "pain_points": [
-        "Moderate load time (3863ms) - could be faster for better UX",
+        "Slow website load time (5765ms) - losing impatient leads",
         "Outdated web technology: Uses javascript:void(0) links",
         "No Google Reviews displayed on website - missing trust signals"
       ],
       "scoring_reasons": [
+        "Slow site speed = high bounce rate (CRITICAL)",
         "Outdated tech hurting credibility (HIGH)",
         "No reviews on site = trust gap (MED)",
         "3 pain points = clear need",
@@ -469,7 +591,7 @@
         "Active online = reachable",
         "Competitive TX/FL market = urgency"
       ],
-      "load_time_ms": 3863,
+      "load_time_ms": 5765,
       "has_chatbot": true,
       "is_hot": false,
       "google_review_data": {
@@ -484,14 +606,15 @@
       "title": "Broker-Owner",
       "location": "Orlando, FL",
       "website": "https://mortgageexpert.com/",
-      "lead_score": 77,
+      "lead_score": 89,
       "pain_points": [
         "No live chat or AI chatbot on website - missing 24/7 lead capture opportunity",
-        "Moderate load time (3745ms) - could be faster for better UX",
+        "Slow website load time (4743ms) - losing impatient leads",
         "No Google Reviews displayed on website - missing trust signals"
       ],
       "scoring_reasons": [
         "No chatbot = losing leads 24/7 (CRITICAL)",
+        "Slow site speed = high bounce rate (CRITICAL)",
         "No reviews on site = trust gap (MED)",
         "3 pain points = clear need",
         "Only 2 review platforms - leaving reviews on table",
@@ -502,9 +625,9 @@
         "Active online = reachable",
         "Competitive TX/FL market = urgency"
       ],
-      "load_time_ms": 3745,
+      "load_time_ms": 4743,
       "has_chatbot": false,
-      "is_hot": false,
+      "is_hot": true,
       "google_review_data": {
         "google_rating": 5.0,
         "google_count": 100,
@@ -520,7 +643,7 @@
       "lead_score": 87,
       "pain_points": [
         "No live chat or AI chatbot on website - missing 24/7 lead capture opportunity",
-        "Slow website load time (7632ms) - losing impatient leads",
+        "Slow website load time (7739ms) - losing impatient leads",
         "No social media links found - weak digital presence",
         "No Google Reviews displayed on website - missing trust signals"
       ],
@@ -537,7 +660,7 @@
         "Active online = reachable",
         "Competitive TX/FL market = urgency"
       ],
-      "load_time_ms": 7632,
+      "load_time_ms": 7739,
       "has_chatbot": false,
       "is_hot": true,
       "google_review_data": {

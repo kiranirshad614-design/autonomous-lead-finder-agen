@@ -8,8 +8,8 @@
     "has_chatbot": true,
     "has_live_chat": true,
     "site_reachable": true,
-    "load_time_ms": 3867,
-    "page_size_kb": 1110.3,
+    "load_time_ms": 5410,
+    "page_size_kb": 1117.7,
     "has_meta_viewport": true,
     "has_mobile_optimization": true,
     "uses_outdated_tech": false,
@@ -18,10 +18,10 @@
     "has_social_links": true,
     "has_google_reviews_embed": false,
     "pain_points": [
-      "Moderate load time (3867ms) - could be faster for better UX",
+      "Slow website load time (5410ms) - losing impatient leads",
       "No Google Reviews displayed on website - missing trust signals"
     ],
-    "audit_notes": "Found 2 pain point(s): Moderate load time (3867ms) - could be faster for better UX; No Google Reviews displayed on website - missing trust signals"
+    "audit_notes": "Found 2 pain point(s): Slow website load time (5410ms) - losing impatient leads; No Google Reviews displayed on website - missing trust signals"
   },
   {
     "company": "HomeTrust Financing",
@@ -32,8 +32,8 @@
     "has_chatbot": true,
     "has_live_chat": true,
     "site_reachable": true,
-    "load_time_ms": 2505,
-    "page_size_kb": 300.6,
+    "load_time_ms": 3303,
+    "page_size_kb": 300.2,
     "has_meta_viewport": true,
     "has_mobile_optimization": true,
     "uses_outdated_tech": false,
@@ -42,10 +42,10 @@
     "has_social_links": false,
     "has_google_reviews_embed": true,
     "pain_points": [
-      "Moderate load time (2505ms) - could be faster for better UX",
+      "Moderate load time (3303ms) - could be faster for better UX",
       "No social media links found - weak digital presence"
     ],
-    "audit_notes": "Found 2 pain point(s): Moderate load time (2505ms) - could be faster for better UX; No social media links found - weak digital presence"
+    "audit_notes": "Found 2 pain point(s): Moderate load time (3303ms) - could be faster for better UX; No social media links found - weak digital presence"
   },
   {
     "company": "Future Home Loans",
@@ -56,8 +56,8 @@
     "has_chatbot": true,
     "has_live_chat": true,
     "site_reachable": true,
-    "load_time_ms": 3461,
-    "page_size_kb": 508.2,
+    "load_time_ms": 5629,
+    "page_size_kb": 508.1,
     "has_meta_viewport": true,
     "has_mobile_optimization": true,
     "uses_outdated_tech": false,
@@ -66,9 +66,9 @@
     "has_social_links": true,
     "has_google_reviews_embed": true,
     "pain_points": [
-      "Moderate load time (3461ms) - could be faster for better UX"
+      "Slow website load time (5629ms) - losing impatient leads"
     ],
-    "audit_notes": "Found 1 pain point(s): Moderate load time (3461ms) - could be faster for better UX"
+    "audit_notes": "Found 1 pain point(s): Slow website load time (5629ms) - losing impatient leads"
   },
   {
     "company": "Wholesale Mortgages LLC",
@@ -79,8 +79,8 @@
     "has_chatbot": true,
     "has_live_chat": true,
     "site_reachable": true,
-    "load_time_ms": 4410,
-    "page_size_kb": 193.3,
+    "load_time_ms": 5949,
+    "page_size_kb": 193.1,
     "has_meta_viewport": true,
     "has_mobile_optimization": true,
     "uses_outdated_tech": false,
@@ -89,10 +89,10 @@
     "has_social_links": true,
     "has_google_reviews_embed": false,
     "pain_points": [
-      "Slow website load time (4410ms) - losing impatient leads",
+      "Slow website load time (5949ms) - losing impatient leads",
       "No Google Reviews displayed on website - missing trust signals"
     ],
-    "audit_notes": "Found 2 pain point(s): Slow website load time (4410ms) - losing impatient leads; No Google Reviews displayed on website - missing trust signals"
+    "audit_notes": "Found 2 pain point(s): Slow website load time (5949ms) - losing impatient leads; No Google Reviews displayed on website - missing trust signals"
   },
   {
     "company": "The Orlicki Group",
@@ -103,8 +103,8 @@
     "has_chatbot": true,
     "has_live_chat": true,
     "site_reachable": true,
-    "load_time_ms": 3179,
-    "page_size_kb": 1078.3,
+    "load_time_ms": 7100,
+    "page_size_kb": 1078.8,
     "has_meta_viewport": true,
     "has_mobile_optimization": true,
     "uses_outdated_tech": false,
@@ -113,10 +113,10 @@
     "has_social_links": true,
     "has_google_reviews_embed": false,
     "pain_points": [
-      "Moderate load time (3179ms) - could be faster for better UX",
+      "Slow website load time (7100ms) - losing impatient leads",
       "No Google Reviews displayed on website - missing trust signals"
     ],
-    "audit_notes": "Found 2 pain point(s): Moderate load time (3179ms) - could be faster for better UX; No Google Reviews displayed on website - missing trust signals"
+    "audit_notes": "Found 2 pain point(s): Slow website load time (7100ms) - losing impatient leads; No Google Reviews displayed on website - missing trust signals"
   },
   {
     "company": "Pioneer Mortgage Funding",
@@ -127,9 +127,9 @@
     "has_chatbot": false,
     "has_live_chat": false,
     "site_reachable": true,
-    "load_time_ms": 3001,
-    "page_size_kb": 73.4,
-    "has_meta_viewport": true,
+    "load_time_ms": 6470,
+    "page_size_kb": 0.2,
+    "has_meta_viewport": false,
     "has_mobile_optimization": false,
     "uses_outdated_tech": false,
     "outdated_tech_details": [],
@@ -138,11 +138,12 @@
     "has_google_reviews_embed": false,
     "pain_points": [
       "No live chat or AI chatbot on website - missing 24/7 lead capture opportunity",
-      "Moderate load time (3001ms) - could be faster for better UX",
+      "No mobile optimization detected - poor experience for mobile visitors",
+      "Slow website load time (6470ms) - losing impatient leads",
       "No social media links found - weak digital presence",
       "No Google Reviews displayed on website - missing trust signals"
     ],
-    "audit_notes": "Found 4 pain point(s): No live chat or AI chatbot on website - missing 24/7 lead capture opportunity; Moderate load time (3001ms) - could be faster for better UX"
+    "audit_notes": "Found 5 pain point(s): No live chat or AI chatbot on website - missing 24/7 lead capture opportunity; No mobile optimization detected - poor experience for mobile visitors"
   },
   {
     "company": "Matador Lending",
@@ -153,7 +154,7 @@
     "has_chatbot": true,
     "has_live_chat": true,
     "site_reachable": true,
-    "load_time_ms": 3917,
+    "load_time_ms": 4392,
     "page_size_kb": 1065.2,
     "has_meta_viewport": true,
     "has_mobile_optimization": true,
@@ -163,10 +164,10 @@
     "has_social_links": true,
     "has_google_reviews_embed": false,
     "pain_points": [
-      "Moderate load time (3917ms) - could be faster for better UX",
+      "Slow website load time (4392ms) - losing impatient leads",
       "No Google Reviews displayed on website - missing trust signals"
     ],
-    "audit_notes": "Found 2 pain point(s): Moderate load time (3917ms) - could be faster for better UX; No Google Reviews displayed on website - missing trust signals"
+    "audit_notes": "Found 2 pain point(s): Slow website load time (4392ms) - losing impatient leads; No Google Reviews displayed on website - missing trust signals"
   },
   {
     "company": "Turn-Key Mortgage Inc.",
@@ -177,8 +178,8 @@
     "has_chatbot": true,
     "has_live_chat": true,
     "site_reachable": true,
-    "load_time_ms": 5035,
-    "page_size_kb": 559.4,
+    "load_time_ms": 8722,
+    "page_size_kb": 560.1,
     "has_meta_viewport": true,
     "has_mobile_optimization": true,
     "uses_outdated_tech": false,
@@ -187,10 +188,10 @@
     "has_social_links": true,
     "has_google_reviews_embed": false,
     "pain_points": [
-      "Slow website load time (5035ms) - losing impatient leads",
+      "Slow website load time (8722ms) - losing impatient leads",
       "No Google Reviews displayed on website - missing trust signals"
     ],
-    "audit_notes": "Found 2 pain point(s): Slow website load time (5035ms) - losing impatient leads; No Google Reviews displayed on website - missing trust signals"
+    "audit_notes": "Found 2 pain point(s): Slow website load time (8722ms) - losing impatient leads; No Google Reviews displayed on website - missing trust signals"
   },
   {
     "company": "Rainmaker Realty",
@@ -201,8 +202,8 @@
     "has_chatbot": true,
     "has_live_chat": true,
     "site_reachable": true,
-    "load_time_ms": 5196,
-    "page_size_kb": 242.6,
+    "load_time_ms": 6819,
+    "page_size_kb": 242.5,
     "has_meta_viewport": true,
     "has_mobile_optimization": true,
     "uses_outdated_tech": false,
@@ -211,10 +212,10 @@
     "has_social_links": true,
     "has_google_reviews_embed": false,
     "pain_points": [
-      "Slow website load time (5196ms) - losing impatient leads",
+      "Slow website load time (6819ms) - losing impatient leads",
       "No Google Reviews displayed on website - missing trust signals"
     ],
-    "audit_notes": "Found 2 pain point(s): Slow website load time (5196ms) - losing impatient leads; No Google Reviews displayed on website - missing trust signals"
+    "audit_notes": "Found 2 pain point(s): Slow website load time (6819ms) - losing impatient leads; No Google Reviews displayed on website - missing trust signals"
   },
   {
     "company": "Texas Premier Mortgage",
@@ -225,7 +226,7 @@
     "has_chatbot": false,
     "has_live_chat": false,
     "site_reachable": true,
-    "load_time_ms": 2620,
+    "load_time_ms": 4097,
     "page_size_kb": 0.1,
     "has_meta_viewport": false,
     "has_mobile_optimization": false,
@@ -237,7 +238,7 @@
     "pain_points": [
       "No live chat or AI chatbot on website - missing 24/7 lead capture opportunity",
       "No mobile optimization detected - poor experience for mobile visitors",
-      "Moderate load time (2620ms) - could be faster for better UX",
+      "Slow website load time (4097ms) - losing impatient leads",
       "No social media links found - weak digital presence",
       "No Google Reviews displayed on website - missing trust signals"
     ],
@@ -252,8 +253,8 @@
     "has_chatbot": true,
     "has_live_chat": true,
     "site_reachable": true,
-    "load_time_ms": 3893,
-    "page_size_kb": 825.1,
+    "load_time_ms": 18245,
+    "page_size_kb": 825.5,
     "has_meta_viewport": true,
     "has_mobile_optimization": true,
     "uses_outdated_tech": false,
@@ -262,10 +263,10 @@
     "has_social_links": true,
     "has_google_reviews_embed": false,
     "pain_points": [
-      "Moderate load time (3893ms) - could be faster for better UX",
+      "Slow website load time (18245ms) - losing impatient leads",
       "No Google Reviews displayed on website - missing trust signals"
     ],
-    "audit_notes": "Found 2 pain point(s): Moderate load time (3893ms) - could be faster for better UX; No Google Reviews displayed on website - missing trust signals"
+    "audit_notes": "Found 2 pain point(s): Slow website load time (18245ms) - losing impatient leads; No Google Reviews displayed on website - missing trust signals"
   },
   {
     "company": "Realty Texas",
@@ -276,8 +277,8 @@
     "has_chatbot": true,
     "has_live_chat": true,
     "site_reachable": true,
-    "load_time_ms": 3662,
-    "page_size_kb": 162.6,
+    "load_time_ms": 4893,
+    "page_size_kb": 163.3,
     "has_meta_viewport": true,
     "has_mobile_optimization": true,
     "uses_outdated_tech": false,
@@ -286,10 +287,10 @@
     "has_social_links": true,
     "has_google_reviews_embed": false,
     "pain_points": [
-      "Moderate load time (3662ms) - could be faster for better UX",
+      "Slow website load time (4893ms) - losing impatient leads",
       "No Google Reviews displayed on website - missing trust signals"
     ],
-    "audit_notes": "Found 2 pain point(s): Moderate load time (3662ms) - could be faster for better UX; No Google Reviews displayed on website - missing trust signals"
+    "audit_notes": "Found 2 pain point(s): Slow website load time (4893ms) - losing impatient leads; No Google Reviews displayed on website - missing trust signals"
   },
   {
     "company": "Networth Builders",
@@ -300,8 +301,8 @@
     "has_chatbot": true,
     "has_live_chat": true,
     "site_reachable": true,
-    "load_time_ms": 3863,
-    "page_size_kb": 149.7,
+    "load_time_ms": 5765,
+    "page_size_kb": 149.5,
     "has_meta_viewport": true,
     "has_mobile_optimization": true,
     "uses_outdated_tech": true,
@@ -312,11 +313,11 @@
     "has_social_links": true,
     "has_google_reviews_embed": false,
     "pain_points": [
-      "Moderate load time (3863ms) - could be faster for better UX",
+      "Slow website load time (5765ms) - losing impatient leads",
       "Outdated web technology: Uses javascript:void(0) links",
       "No Google Reviews displayed on website - missing trust signals"
     ],
-    "audit_notes": "Found 3 pain point(s): Moderate load time (3863ms) - could be faster for better UX; Outdated web technology: Uses javascript:void(0) links"
+    "audit_notes": "Found 3 pain point(s): Slow website load time (5765ms) - losing impatient leads; Outdated web technology: Uses javascript:void(0) links"
   },
   {
     "company": "Mortgage Expert",
@@ -327,10 +328,10 @@
     "has_chatbot": false,
     "has_live_chat": false,
     "site_reachable": true,
-    "load_time_ms": 3745,
-    "page_size_kb": 199.7,
+    "load_time_ms": 4743,
+    "page_size_kb": 150.2,
     "has_meta_viewport": true,
-    "has_mobile_optimization": false,
+    "has_mobile_optimization": true,
     "uses_outdated_tech": false,
     "outdated_tech_details": [],
     "ssl": true,
@@ -338,10 +339,10 @@
     "has_google_reviews_embed": false,
     "pain_points": [
       "No live chat or AI chatbot on website - missing 24/7 lead capture opportunity",
-      "Moderate load time (3745ms) - could be faster for better UX",
+      "Slow website load time (4743ms) - losing impatient leads",
       "No Google Reviews displayed on website - missing trust signals"
     ],
-    "audit_notes": "Found 3 pain point(s): No live chat or AI chatbot on website - missing 24/7 lead capture opportunity; Moderate load time (3745ms) - could be faster for better UX"
+    "audit_notes": "Found 3 pain point(s): No live chat or AI chatbot on website - missing 24/7 lead capture opportunity; Slow website load time (4743ms) - losing impatient leads"
   },
   {
     "company": "SI Real Estate Investments",
@@ -352,8 +353,8 @@
     "has_chatbot": false,
     "has_live_chat": false,
     "site_reachable": true,
-    "load_time_ms": 7632,
-    "page_size_kb": 5.5,
+    "load_time_ms": 7739,
+    "page_size_kb": 5.4,
     "has_meta_viewport": true,
     "has_mobile_optimization": false,
     "uses_outdated_tech": false,
@@ -363,10 +364,10 @@
     "has_google_reviews_embed": false,
     "pain_points": [
       "No live chat or AI chatbot on website - missing 24/7 lead capture opportunity",
-      "Slow website load time (7632ms) - losing impatient leads",
+      "Slow website load time (7739ms) - losing impatient leads",
       "No social media links found - weak digital presence",
       "No Google Reviews displayed on website - missing trust signals"
     ],
-    "audit_notes": "Found 4 pain point(s): No live chat or AI chatbot on website - missing 24/7 lead capture opportunity; Slow website load time (7632ms) - losing impatient leads"
+    "audit_notes": "Found 4 pain point(s): No live chat or AI chatbot on website - missing 24/7 lead capture opportunity; Slow website load time (7739ms) - losing impatient leads"
   }
 ]
