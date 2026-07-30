@@ -62,12 +62,18 @@ Best,
 
 [Your Name/Vibe Studio AI Team]"""
 
+    linkedin_message = ""
+    if lead.get("linkedin_url"):
+        linkedin_message = f"Hi {dm.split()[0] if dm else 'there'}, I noticed your work at {company} and saw some opportunities to boost your lead conversion with automation. Specifically, the lack of {", ".join(automation_gaps)} could be costing you. Would love to connect and share some insights!"
+
     drafts.append({
         "company": company,
         "dm": dm,
         "subject": subject,
         "body": body,
-        "lead_score": lead['lead_score']
+        "lead_score": lead['lead_score'],
+        "linkedin_url": lead.get("linkedin_url"),
+        "linkedin_message": linkedin_message
     })
 
 # Save drafts
@@ -75,6 +81,26 @@ with open('audit_data/email_drafts.json', 'w') as f:
     json.dump(drafts, f, indent=2)
 
 print("Email drafts generated and saved to audit_data/email_drafts.json")
+
+# Generate CRM-ready export data (Notion/HubSpot format)
+crm_export = []
+for d in drafts:
+    crm_export.append({
+        "Company Name": d["company"],
+        "Decision Maker": d["dm"],
+        "LinkedIn URL": d.get("linkedin_url", ""),
+        "Lead Score": d["lead_score"],
+        "Email Subject": d["subject"],
+        "Email Body": d["body"],
+        "LinkedIn Message": d.get("linkedin_message", ""),
+        "Status": "Lead Identified",
+        "Source": "Autonomous SDR Agent"
+    })
+
+with open('audit_data/crm_leads_export.json', 'w') as f:
+    json.dump(crm_export, f, indent=2)
+
+print("CRM-ready leads exported to audit_data/crm_leads_export.json")
 
 # Optional Gmail Sync via Gmail API Connector
 def sync_to_gmail(drafts):
@@ -130,5 +156,8 @@ for d in drafts:
     print(f"\n--- Draft for: {d['company']} ({d['lead_score']}/100) ---")
     print(f"Subject: {d['subject']}")
     print(d['body'][:150] + "...")
+    if d.get("linkedin_url"):
+        print(f"LinkedIn Profile: {d['linkedin_url']}")
+        print(f"LinkedIn Message: {d['linkedin_message']}")
 
 print(f"\nGmail Sync Status: {sync_status}")

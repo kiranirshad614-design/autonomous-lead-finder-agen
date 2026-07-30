@@ -184,15 +184,18 @@ for audit in audit_results:
     scored_lead = {
         "estimated_monthly_lost_revenue": lost_revenue,
         "company": company,
-        "dm": audit["dm"],
+        "dm": audit.get("dm_extracted") or audit["dm"],
         "title": audit["title"],
         "location": audit["location"],
         "website": audit["url"],
+        "linkedin_url": audit.get("linkedin_url"),
         "lead_score": score,
         "pain_points": audit["pain_points"],
         "scoring_reasons": reasons,
         "load_time_ms": audit["load_time_ms"],
         "has_chatbot": audit["has_chatbot"],
+        "has_booking_calendar": audit.get("has_booking_calendar", False),
+        "has_auto_responder": audit.get("has_auto_responder", False),
         "is_hot": score > 80,
         "google_review_data": reviews
     }

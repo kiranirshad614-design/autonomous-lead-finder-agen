@@ -25,12 +25,16 @@ python3 email_drafts.py
 echo "4/4. Exporting to CSV..."
 python3 export_to_google_sheets.py
 
-# 5. Generate Timestamped Report
+# 5. Generate PDF Reports for Hot Leads
+echo "5/6. Generating PDF audit reports for hot leads..."
+./venv/bin/python generate_pdf_report.py
+
+# 6. Generate Timestamped Report
 echo "Generating timestamped report..."
 cp LEAD_REPORT.md "$REPORT_FILE"
 echo -e "\n\n---\n*Report generated at: $(date)*" >> "$REPORT_FILE"
 
-# 6. Commit and Push to GitHub
+# 7. Commit and Push to GitHub
 echo "Committing and pushing to GitHub..."
 git add -A
 git commit -m "Automated Pipeline Run: $TIMESTAMP
@@ -38,6 +42,8 @@ git commit -m "Automated Pipeline Run: $TIMESTAMP
 - Updated audit data
 - Generated new HOT leads
 - Updated email drafts
+- Generated PDF audit reports
+- Exported CRM-ready data
 - Added timestamped report: $REPORT_FILE"
 
 # If the remote is not set, use the user's PAT

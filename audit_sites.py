@@ -72,7 +72,9 @@ def audit_website(lead):
         "pain_points": [],
         "audit_notes": "",
         "has_booking_calendar": False,
-        "has_auto_responder": False
+        "has_auto_responder": False,
+        "linkedin_url": None,
+        "dm_extracted": None
     }
     
     try:
@@ -152,6 +154,32 @@ def audit_website(lead):
             if kw in html:
                 results["has_booking_calendar"] = True
                 break
+
+        # Extract LinkedIn URLs
+        linkedin_patterns = [
+            r'https?://(?:www\.)?linkedin\.com/in/[\w\-\%]+',
+            r'https?://(?:www\.)?linkedin\.com/company/[\w\-\%]+'
+        ]
+        for pattern in linkedin_patterns:
+            matches = re.findall(pattern, response.text)
+            if matches:
+                results["linkedin_url"] = matches[0]
+                break
+        
+        # Extract Decision Maker (heuristic-based)
+        dm_patterns = [
+            r'(?:Founder|CEO|Owner|President|Broker|Director):\s*([A-Z][a-z]+ [A-Z][a-z]+)',
+            r'([A-Z][a-z]+ [A-Z][a-z]+)\s*(?:Founder|CEO|Owner|President|Broker|Director)'
+        ]
+        for pattern in dm_patterns:
+            matches = re.findall(pattern, response.text)
+            if matches:
+                results["dm_extracted"] = matches[0]
+                break
+        
+        # Fallback to provided DM if extraction fails
+        if not results["dm_extracted"]:
+            results["dm_extracted"] = lead.get("dm")
 
         # Generate pain points
         pain_points = []
