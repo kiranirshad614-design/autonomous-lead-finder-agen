@@ -46,6 +46,11 @@ all_leads = [
     {"company": "Networth Builders", "url": "https://networthbuilders.com/", "dm": "Wale Lawal", "title": "Founder", "location": "Houston, TX"},
     {"company": "Mortgage Expert", "url": "https://mortgageexpert.com/", "dm": "Shahram Sondi", "title": "Broker-Owner", "location": "Orlando, FL"},
     {"company": "SI Real Estate Investments", "url": "https://www.sirealestateinvestments.com/", "dm": "Nibal Elsaadi", "title": "Broker Associate", "location": "Tampa, FL"},
+    {"company": "Momentum Realty", "url": "https://movewithmomentum.com/", "dm": "Jon Brooks", "title": "Co-Founder", "location": "Jacksonville, FL"},
+    {"company": "Champions Mortgage", "url": "https://championsmortgageteam.com/", "dm": "Joel Mathew", "title": "President/CEO", "location": "Houston, TX"},
+    {"company": "Arnaiz Mortgage", "url": "https://arnaizmortgage.com/", "dm": "Tyler Arnaiz", "title": "Owner", "location": "Austin, TX"},
+    {"company": "Vreeland Real Estate", "url": "https://vreelandre.com/", "dm": "Jordan Vreeland", "title": "Founder", "location": "Tampa, FL"},
+    {"company": "LoKation Real Estate", "url": "https://joinlokation.com/", "dm": "Nathan Klutznick", "title": "CEO", "location": "Florida"},
 ]
 
 def audit_website(lead):
