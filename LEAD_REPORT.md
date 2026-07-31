@@ -1,6 +1,6 @@
 # Autonomous Lead Finder Agent - Pipeline Report
 
-**Pipeline Run Date:** July 26, 2026
+**Pipeline Run Date:** July 31, 2026
 
 **Target Criteria:**
 
@@ -17,10 +17,10 @@
 
 | Step | Description | Result |
 |------|-------------|--------|
-| 1. Lead Search | Web search across TX & FL | 15 companies identified |
-| 2. Website Audit | Crawled 15 websites for pain points | 15 audits completed |
+| 1. Lead Search | Web search across TX & FL | 5 new companies identified |
+| 2. Website Audit | Crawled 5 websites for pain points | 5 audits completed |
 | 3. Scoring | Scored each lead 1-100 | 2 HOT leads (score > 80) |
-| 4. Email Drafting | Hyper-personalized emails | 2 drafts created |
+| 4. Email Drafting | Hyper-personalized emails | 2 drafts created & synced to Gmail |
 | 5. Export | Google Sheets CSV | Ready for import |
 | 6. Code Package | GitHub-ready scripts | All 4 scripts + README |
 
@@ -30,69 +30,8 @@
 
 | Company | Contact Person | Title | Location | Lead Score | Primary Pain Point |
 |---------|---------------|-------|----------|------------|-------------------|
-| Texas Premier Mortgage | Owner (TBD) | Owner | Houston, TX | **90/100** | No chatbot + No mobile optimization + No social media |
-| SI Real Estate Investments | Nibal Elsaadi | Broker Associate | Tampa, FL | **87/100** | No chatbot + Slow site (7.6s) + No social media |
-
----
-
-## Warm Leads (Score 70-80) - Monitor
-
-| Company | Contact Person | Title | Location | Lead Score | Primary Pain Point |
-|---------|---------------|-------|----------|------------|-------------------|
-| Pioneer Mortgage Funding | Gerald Cugno | President & Owner | Florida | 70/100 | No chatbot + No social media |
-| Turn-Key Mortgage Inc. | Jennifer Brown | Broker/Owner | Houston, TX | 76/100 | Slow site (5.0s) + No reviews embedded |
-| Mortgage Expert | Shahram Sondi | Broker-Owner | Orlando, FL | 77/100 | No chatbot + No reviews embedded |
-| Rainmaker Realty | Jeanne | Founder | San Antonio, TX | 71/100 | Slow site (5.2s) + No reviews embedded |
-| Wholesale Mortgages LLC | Javier Satizabal | Founder, CEO | Tampa, FL | 65/100 | Slow site (4.4s) + No reviews embedded |
-| The Orlicki Group | Oliver Orlicki | Founder | Tampa, FL | 60/100 | Moderate load time + No reviews |
-
----
-
-## Cold Leads (Score < 70) - Skip
-
-| Company | Contact Person | Location | Lead Score |
-|---------|---------------|----------|------------|
-| Florida Homes Realty & Mortgage | James Angelo | Jacksonville, FL | 50/100 |
-| HomeTrust Financing | Chris Cavazos | Sugar Land, TX | 60/100 |
-| Future Home Loans | Robert Lynn | Jacksonville Beach, FL | 45/100 |
-| Matador Lending | Founding Team | Houston, TX | 60/100 |
-| First Commerce Financial | Kirk Chivas | Jacksonville, FL | 56/100 |
-| Realty Texas | Jack Stapleton | Texas | 61/100 |
-| Networth Builders | Wale Lawal | Houston, TX | 62/100 |
-
----
-
-## Personalized Email Drafts
-
-### Draft 1: Texas Premier Mortgage (Score: 90/100)
-
-**Subject:** Quick question about Texas Premier Mortgage's website / Lead capture
-
-> Hi Team,
->
-> I noticed your website isn't fully optimized for mobile devices. With over 60% of home searches happening on phones in Houston, TX, this could be pushing potential buyers straight to your competitors. I also noticed you have great reviews, but they aren't currently embedded on your homepage to build instant trust with new visitors.
->
-> We specialize in helping independent mortgage firms in Texas and Florida install custom AI chatbots and speed up their websites to capture more leads automatically. We recently helped a similar broker in the area increase their after-hours lead capture by 35% without hiring more staff.
->
-> Are you open to a quick 5-minute chat this week to see if we can do the same for Texas Premier Mortgage?
->
-> Best,
-> [Your Name]
-
-### Draft 2: SI Real Estate Investments (Score: 87/100)
-
-**Subject:** Quick question about SI Real Estate Investments's website / Lead capture
-
-> Hi Nibal,
->
-> I was looking at your website in Tampa, FL and noticed it's loading quite slowly. In the competitive Tampa, FL real estate market, a slow site can cost you up to 40% of mobile traffic before they even see your listings.
->
-> We specialize in helping independent real estate brokerages in Texas and Florida install custom AI chatbots and speed up their websites to capture more leads automatically. We recently helped a similar brokerage in the area increase their after-hours lead capture by 35% without hiring more staff.
->
-> Are you open to a quick 5-minute chat this week to see if we can do the same for SI Real Estate Investments?
->
-> Best,
-> [Your Name]
+| Momentum Realty | Jon Brooks | Co-Founder | Jacksonville, FL | **100/100** | No chatbot + No booking calendar + Slow site |
+| Champions Mortgage | Joel Mathew | President/CEO | Houston, TX | **83/100** | No booking calendar + Slow site (4.1s) |
 
 ---
 
@@ -100,11 +39,10 @@
 
 | Integration | Status | Notes |
 |-------------|--------|-------|
-| Google Sheets | CSV Ready | `hot_leads_google_sheets.csv` generated; gws CLI requires `gws auth login` |
-| Gmail Drafts | **Optional Sync Active** | Drafts sync to Gmail via `email_drafts.py` when connector is active |
-| GitHub | **Active** | Pipeline auto-commits and pushes all changes to main branch |
-| Dashboard | **Active** | `index.html` (Tailwind CSS) for metric visualization |
-| Deduplication | **Active** | `seen_leads.json` ensures no duplicate processing of domains |
+| Google Sheets | CSV Ready | `hot_leads_google_sheets.csv` generated |
+| Gmail Drafts | **Active** | 2 Drafts synced to Gmail |
+| GitHub | **Active** | Pipeline auto-commits and pushes all changes |
+| Deduplication | **Active** | `seen_leads.json` updated |
 
 ---
 
@@ -112,24 +50,12 @@
 
 | File | Description |
 |------|-------------|
-| `audit_sites.py` | Website audit scraper (chatbot, speed, mobile checks) |
-| `score_leads_v2.py` | Lead scoring engine (1-100 scale) |
-| `email_drafts.py` | Hyper-personalized email generator |
-| `export_to_google_sheets.py` | CSV export for Google Sheets/CRM |
-| `README.md` | Full documentation for the agent |
 | `hot_leads_google_sheets.csv` | HOT leads ready for Sheets import |
-| `full_pipeline_leads.csv` | All 15 leads with full scoring data |
 | `email_drafts.json` | All generated email drafts |
 | `scored_leads.json` | Complete scored lead data |
-| `index.html` | Tailwind CSS Dashboard |
 | `seen_leads.json` | Deduplication database |
+| `audit_data/pdf_reports/` | Detailed PDF audit reports for hot leads |
 
 ---
 
-## Next Steps for the User
-
-1. **Enable Google Sheets connector:** Run `gws auth login` to enable direct Sheets push.
-2. **Enable Gmail connector:** Enable the Gmail connector in settings to auto-save email drafts.
-3. **Import CSV:** Manually import `hot_leads_google_sheets.csv` into your Google Sheet, or enable the connector for automated push.
-4. **Send Emails:** Copy the personalized drafts above into Gmail and send for review.
-5. **Push to GitHub:** Upload the `github_package/` folder to your GitHub repository.
+*Report generated at: Fri Jul 31 03:05:00 UTC 2026*
