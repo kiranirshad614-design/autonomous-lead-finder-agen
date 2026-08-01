@@ -187,6 +187,7 @@ for audit in audit_results:
         "dm": audit.get("dm_extracted") or audit["dm"],
         "title": audit["title"],
         "location": audit["location"],
+        "email": audit.get("email"),
         "website": audit["url"],
         "linkedin_url": audit.get("linkedin_url"),
         "lead_score": score,

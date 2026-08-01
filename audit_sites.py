@@ -51,6 +51,12 @@ all_leads = [
     {"company": "Arnaiz Mortgage", "url": "https://arnaizmortgage.com/", "dm": "Tyler Arnaiz", "title": "Owner", "location": "Austin, TX"},
     {"company": "Vreeland Real Estate", "url": "https://vreelandre.com/", "dm": "Jordan Vreeland", "title": "Founder", "location": "Tampa, FL"},
     {"company": "LoKation Real Estate", "url": "https://joinlokation.com/", "dm": "Nathan Klutznick", "title": "CEO", "location": "Florida"},
+    {"company": "London Foster", "url": "https://www.londonfoster.com/", "dm": "Bobby Mahallati", "title": "Broker & Owner", "location": "Miami, FL", "email": "broker@londonfoster.net"},
+    {"company": "Balistreri Real Estate", "url": "https://www.balistreri.com/", "dm": "Jim Balistreri", "title": "CEO/Owner", "location": "Fort Lauderdale, FL", "email": "jim@balistreri.com"},
+    {"company": "The Keyes Company", "url": "https://www.keyes.com/", "dm": "Mike Pappas", "title": "CEO", "location": "Miami, FL", "email": "mikepappas@keyes.com"},
+    {"company": "United Real Estate DFW Properties", "url": "http://brendacole.unitedrealestatedfwproperties.com/", "dm": "Brenda Cole", "title": "Broker/Owner-Partner", "location": "Grapevine, TX", "email": "BrendaColeDFW@gmail.com"},
+    {"company": "The Agency Dallas", "url": "https://txrootsglobalre.com/damon-williamson/", "dm": "Damon Williamson", "title": "Broker/Owner", "location": "Dallas, TX", "email": "damon.williamson@theagencyre.com"},
+    {"company": "The Mortgage Brokers, LLC", "url": "https://hellomortgagebrokers.com/", "dm": "Gabe Garza", "title": "Mortgage Broker/Owner", "location": "Frisco, TX", "email": "gabe@hellomortgagebrokers.com"},
 ]
 
 def audit_website(lead):
@@ -61,6 +67,7 @@ def audit_website(lead):
         "dm": lead["dm"],
         "title": lead["title"],
         "location": lead["location"],
+        "email": lead.get("email"),
         "url": url,
         "has_chatbot": False,
         "has_live_chat": False,
@@ -182,9 +189,8 @@ def audit_website(lead):
                 results["dm_extracted"] = matches[0]
                 break
         
-        # Fallback to provided DM if extraction fails
-        if not results["dm_extracted"]:
-            results["dm_extracted"] = lead.get("dm")
+        # Prioritize provided DM, fallback to extraction
+        results["dm_extracted"] = lead.get("dm") or results.get("dm_extracted")
 
         # Generate pain points
         pain_points = []

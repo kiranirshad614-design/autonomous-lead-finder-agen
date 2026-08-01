@@ -1,15 +1,15 @@
 # Autonomous Lead Finder Agent - Pipeline Report
 
-**Pipeline Run Date:** July 31, 2026
+**Pipeline Run Date:** July 31, 2026 (Evening Run)
 
 **Target Criteria:**
 
 | Parameter | Value |
 |-----------|-------|
 | Industry | Real Estate Agencies & Mortgage Brokers |
-| Location | Texas & Florida, United States |
-| Job Titles | Founder, CEO, Agency Owner, Managing Director |
-| Pain-Point Focus | Missing AI chatbot, outdated website, low Google reviews |
+| Location | Miami, Fort Lauderdale, Dallas, Frisco, Grapevine |
+| Job Titles | Founder, CEO, Agency Owner, Broker |
+| Pain-Point Focus | AI Lead Capture, Booking Automation, Site Speed |
 
 ---
 
@@ -17,21 +17,24 @@
 
 | Step | Description | Result |
 |------|-------------|--------|
-| 1. Lead Search | Web search across TX & FL | 5 new companies identified |
-| 2. Website Audit | Crawled 5 websites for pain points | 5 audits completed |
-| 3. Scoring | Scored each lead 1-100 | 2 HOT leads (score > 80) |
-| 4. Email Drafting | Hyper-personalized emails | 2 drafts created & synced to Gmail |
-| 5. Export | Google Sheets CSV | Ready for import |
-| 6. Code Package | GitHub-ready scripts | All 4 scripts + README |
+| 1. Lead Search | New Cities (Miami, DFW) | 6 new companies identified |
+| 2. Website Audit | Technical Pain Point Audit | 6 audits completed |
+| 3. Scoring | HOT Lead Scoring (>80) | 5 HOT leads identified |
+| 4. Verification | Syntax & MX Record Check | 5 emails verified |
+| 5. Email Drafting | "Kiran Irshad" Sign-off | 5 drafts synced to Gmail |
+| 6. CRM Logging | Persistent Append | 5 leads added to `crm_google_sheets.csv` |
 
 ---
 
-## HOT Leads Summary
+## HOT Leads Summary (Verified)
 
-| Company | Contact Person | Title | Location | Lead Score | Primary Pain Point |
-|---------|---------------|-------|----------|------------|-------------------|
-| Momentum Realty | Jon Brooks | Co-Founder | Jacksonville, FL | **100/100** | No chatbot + No booking calendar + Slow site |
-| Champions Mortgage | Joel Mathew | President/CEO | Houston, TX | **83/100** | No booking calendar + Slow site (4.1s) |
+| Company | Contact Person | Title | Location | Lead Score | Email |
+|---------|---------------|-------|----------|------------|-------|
+| London Foster | Bobby Mahallati | Broker & Owner | Miami, FL | **100/100** | broker@londonfoster.net |
+| Balistreri Real Estate | Jim Balistreri | CEO/Owner | Fort Lauderdale, FL | **100/100** | jim@balistreri.com |
+| The Keyes Company | Mike Pappas | CEO | Miami, FL | **100/100** | mikepappas@keyes.com |
+| United Real Estate DFW | Brenda Cole | Broker/Owner | Grapevine, TX | **100/100** | BrendaColeDFW@gmail.com |
+| The Mortgage Brokers, LLC | Gabe Garza | Owner | Frisco, TX | **94/100** | gabe@hellomortgagebrokers.com |
 
 ---
 
@@ -39,10 +42,10 @@
 
 | Integration | Status | Notes |
 |-------------|--------|-------|
-| Google Sheets | CSV Ready | `hot_leads_google_sheets.csv` generated |
-| Gmail Drafts | **Active** | 2 Drafts synced to Gmail |
-| GitHub | **Active** | Pipeline auto-commits and pushes all changes |
-| Deduplication | **Active** | `seen_leads.json` updated |
+| Google Sheets CRM | **Active** | `crm_google_sheets.csv` updated (Append mode) |
+| Gmail Drafts | **Active** | 5 Drafts synced with verified emails |
+| Email Verification | **Active** | Syntax + MX Record check passed |
+| GitHub | **Active** | Pipeline auto-commits and pushes |
 
 ---
 
@@ -50,12 +53,12 @@
 
 | File | Description |
 |------|-------------|
-| `hot_leads_google_sheets.csv` | HOT leads ready for Sheets import |
-| `email_drafts.json` | All generated email drafts |
-| `scored_leads.json` | Complete scored lead data |
-| `seen_leads.json` | Deduplication database |
-| `audit_data/pdf_reports/` | Detailed PDF audit reports for hot leads |
+| `audit_data/crm_google_sheets.csv` | Persistent CRM log with all outreach |
+| `audit_data/verified_email_drafts.json` | JSON of all verified outreach |
+| `audit_data/pdf_reports/` | Detailed PDF audit reports for all hot leads |
+| `verify_and_sync.py` | New script for email verification & CRM logging |
 
 ---
 
-*Report generated at: Fri Jul 31 03:05:00 UTC 2026*
+*Report generated at: Fri Jul 31 03:20:00 UTC 2026*
+*Sign-off: Kiran Irshad | Vibe Studio AI*
