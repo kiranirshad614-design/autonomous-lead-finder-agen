@@ -57,6 +57,8 @@ all_leads = [
     {"company": "United Real Estate DFW Properties", "url": "http://brendacole.unitedrealestatedfwproperties.com/", "dm": "Brenda Cole", "title": "Broker/Owner-Partner", "location": "Grapevine, TX", "email": "BrendaColeDFW@gmail.com"},
     {"company": "The Agency Dallas", "url": "https://txrootsglobalre.com/damon-williamson/", "dm": "Damon Williamson", "title": "Broker/Owner", "location": "Dallas, TX", "email": "damon.williamson@theagencyre.com"},
     {"company": "The Mortgage Brokers, LLC", "url": "https://hellomortgagebrokers.com/", "dm": "Gabe Garza", "title": "Mortgage Broker/Owner", "location": "Frisco, TX", "email": "gabe@hellomortgagebrokers.com"},
+    {"company": "Spyglass Realty", "url": "https://www.spyglassrealty.com/", "dm": "Ryan Rodenbeck", "title": "Owner", "location": "Austin, TX", "email": "ryan@spyglassrealty.com"},
+    {"company": "Mortgage Expert", "url": "https://mortgageexpert.com/", "dm": "Shahram Sondi", "title": "Broker-Owner", "location": "Orlando, FL", "email": "shahram@mortgageexpert.com"},
 ]
 
 def audit_website(lead):
