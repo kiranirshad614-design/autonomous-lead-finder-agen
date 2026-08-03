@@ -59,6 +59,9 @@ all_leads = [
     {"company": "The Mortgage Brokers, LLC", "url": "https://hellomortgagebrokers.com/", "dm": "Gabe Garza", "title": "Mortgage Broker/Owner", "location": "Frisco, TX", "email": "gabe@hellomortgagebrokers.com"},
     {"company": "Spyglass Realty", "url": "https://www.spyglassrealty.com/", "dm": "Ryan Rodenbeck", "title": "Owner", "location": "Austin, TX", "email": "ryan@spyglassrealty.com"},
     {"company": "Mortgage Expert", "url": "https://mortgageexpert.com/", "dm": "Shahram Sondi", "title": "Broker-Owner", "location": "Orlando, FL", "email": "shahram@mortgageexpert.com"},
+    {"company": "The Brokery", "url": "https://thebrokery.com/", "dm": "Tucker Blalock", "title": "Co-Founder", "location": "Phoenix, AZ", "email": "tucker@thebrokery.com"},
+    {"company": "Atlanta Mortgage Advisors", "url": "https://www.atlmortgageadvisors.com/", "dm": "Joe Trovato", "title": "Owner", "location": "Atlanta, GA", "email": "joe@Joetrovato.com"},
+    {"company": "Stellar Mortgage Corporation", "url": "https://www.stellar-mortgage.com/", "dm": "John West", "title": "Owner", "location": "Atlanta, GA", "email": "johnwest@stellar-mortgage.com"},
 ]
 
 def audit_website(lead):
