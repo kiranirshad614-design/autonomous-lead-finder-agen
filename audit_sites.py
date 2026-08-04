@@ -62,6 +62,10 @@ all_leads = [
     {"company": "The Brokery", "url": "https://thebrokery.com/", "dm": "Tucker Blalock", "title": "Co-Founder", "location": "Phoenix, AZ", "email": "tucker@thebrokery.com"},
     {"company": "Atlanta Mortgage Advisors", "url": "https://www.atlmortgageadvisors.com/", "dm": "Joe Trovato", "title": "Owner", "location": "Atlanta, GA", "email": "joe@Joetrovato.com"},
     {"company": "Stellar Mortgage Corporation", "url": "https://www.stellar-mortgage.com/", "dm": "John West", "title": "Owner", "location": "Atlanta, GA", "email": "johnwest@stellar-mortgage.com"},
+    {"company": "Greenwood King", "url": "https://greenwoodking.com/", "dm": "Linda King", "title": "President/CEO", "location": "Houston, TX", "email": "lking@greenwoodking.com"},
+    {"company": "Brockway Realty", "url": "https://www.brockwayrealty.com/", "dm": "James Brockway", "title": "Founder", "location": "Houston, TX", "email": "jbrockway@brockwaycommercial.com"},
+    {"company": "On Point Home Loans", "url": "https://ophomeloans.com/", "dm": "Adam J Roberts", "title": "CEO", "location": "Charlotte, NC", "email": "adam@ophomeloans.com"},
+    {"company": "High Performance Real Estate Advisors", "url": "https://highperformancerealestate.com/", "dm": "Lars Hedenborg", "title": "Founder", "location": "Charlotte, NC", "email": "lars@hprea.com"},
 ]
 
 def audit_website(lead):
