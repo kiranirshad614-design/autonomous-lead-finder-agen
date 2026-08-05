@@ -1,10 +1,10 @@
 # Autonomous Lead Finder Agent - Pipeline Report
 
-**Pipeline Run Date:** August 04, 2026
+**Pipeline Run Date:** August 05, 2026
 
 **Target Criteria:**
 - Industry: Real Estate & Mortgage Agencies
-- Location: Houston, TX; Charlotte, NC
+- Location: Denver, CO; Nashville, TN
 - Focus: AI Lead Capture, Booking Automation, Site Speed
 
 ---
@@ -13,12 +13,12 @@
 
 | Step | Description | Result |
 |------|-------------|--------|
-| 1. Scout & Score | New Leads (Houston, Charlotte) | 3 New HOT Leads Identified |
-| 2. PDF Audit | Technical Audit Reports | Generated for Brockway Realty, HPREA, & Greenwood King |
-| 3. Email Verification | Syntax & MX Record Check | 3 New Emails Verified |
-| 4. Cold Outreach | Initial Audit Email | Sent to 3 New Leads |
-| 5. Automated Follow-ups | Check August 1st Leads | 5 Follow-ups sent (Bobby, Jim, Mike, Brenda, Gabe) |
-| 6. CRM Update | Persistent CRM Sync | `crm_google_sheets.csv` updated |
+| 1. Scout & Score | New Leads (Denver, Nashville) | 2 New HOT Leads Identified |
+| 2. PDF Audit | Technical Audit Reports | Generated for The Anderson Group & West + Main Homes |
+| 3. Email Verification | Syntax & MX Record Check | 2 New Emails Verified |
+| 4. Cold Outreach | Initial Audit Email | Sent to 2 New Leads |
+| 5. Automated Follow-ups | Check August 2nd Leads | 1 Follow-up sent (Ryan Rodenbeck - Spyglass Realty) |
+| 6. CRM Update | Persistent CRM Sync | `crm_google_sheets.csv` updated and cleaned |
 
 ---
 
@@ -26,21 +26,16 @@
 
 | Company | Contact Person | Title | Location | Lead Score | Email |
 |---------|---------------|-------|----------|------------|-------|
-| Brockway Realty | James Brockway | Founder | Houston, TX | **100/100** | jbrockway@brockwaycommercial.com |
-| High Performance Real Estate Advisors | Lars Hedenborg | Founder | Charlotte, NC | **100/100** | lars@hprea.com |
-| Greenwood King | Linda King | President/CEO | Houston, TX | **94/100** | lking@greenwoodking.com |
+| The Anderson Group | Josh Anderson | Owner | Nashville, TN | **94/100** | josh@joshandersonrealestate.com |
+| West + Main Homes | Cheryl Smock | Co-Founder | Denver, CO | **89/100** | hello@westandmainhomes.com |
 
 ---
 
-## Automated Follow-up Summary (August 1st Leads)
+## Automated Follow-up Summary (August 2nd Leads)
 
 | Company | Contact Person | Last Contact | Follow-up Date | Status |
 |---------|---------------|--------------|----------------|--------|
-| London Foster | Bobby Mahallati | 2026-08-01 | 2026-08-04 | Follow-up #1 Sent |
-| Balistreri Real Estate | Jim Balistreri | 2026-08-01 | 2026-08-04 | Follow-up #1 Sent |
-| The Keyes Company | Mike Pappas | 2026-08-01 | 2026-08-04 | Follow-up #1 Sent |
-| United Real Estate DFW Properties | Brenda Cole | 2026-08-01 | 2026-08-04 | Follow-up #1 Sent |
-| The Mortgage Brokers, LLC | Gabe Garza | 2026-08-01 | 2026-08-04 | Follow-up #1 Sent |
+| Spyglass Realty | Ryan Rodenbeck | 2026-08-02 | 2026-08-05 | Follow-up #1 Sent |
 
 ---
 
@@ -48,8 +43,8 @@
 
 | Integration | Status | Notes |
 |-------------|--------|-------|
-| Google Sheets CRM | **Active** | `crm_google_sheets.csv` updated with 8 new entries |
-| Gmail Outreach | **Active** | 3 Initial, 5 Follow-ups sent |
+| Google Sheets CRM | **Active** | `crm_google_sheets.csv` updated and malformed lines fixed |
+| Gmail Outreach | **Active** | 2 Initial, 1 Follow-up sent |
 | Email Verification | **Active** | All new leads verified before sending |
 | GitHub | **Active** | Pushing updates to main branch |
 
@@ -60,11 +55,11 @@
 | File | Description |
 |------|-------------|
 | `audit_data/crm_google_sheets.csv` | Centralized CRM log with all outreach and follow-up data |
-| `audit_data/pdf_reports/Brockway_Realty_Audit_Report.pdf` | Detailed audit for new HOT lead |
-| `audit_data/pdf_reports/High_Performance_Real_Estate_Advisors_Audit_Report.pdf` | Detailed audit for new HOT lead |
-| `audit_data/pdf_reports/Greenwood_King_Audit_Report.pdf` | Detailed audit for new HOT lead |
+| `audit_data/pdf_reports/The_Anderson_Group_Audit_Report.pdf` | Detailed audit for new HOT lead |
+| `audit_data/pdf_reports/West_+_Main_Homes_Audit_Report.pdf` | Detailed audit for new HOT lead |
+| `audit_data/pdf_reports/Spyglass_Realty_Audit_Report.pdf` | Audit report for follow-up lead |
 
 ---
 
-*Report generated at: Tue Aug 04 04:00:00 UTC 2026*
+*Report generated at: Wed Aug 05 04:00:00 UTC 2026*
 *Sign-off: Kiran Irshad | Vibe Studio AI*

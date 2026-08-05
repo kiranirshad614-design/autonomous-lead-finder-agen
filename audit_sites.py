@@ -66,6 +66,10 @@ all_leads = [
     {"company": "Brockway Realty", "url": "https://www.brockwayrealty.com/", "dm": "James Brockway", "title": "Founder", "location": "Houston, TX", "email": "jbrockway@brockwaycommercial.com"},
     {"company": "On Point Home Loans", "url": "https://ophomeloans.com/", "dm": "Adam J Roberts", "title": "CEO", "location": "Charlotte, NC", "email": "adam@ophomeloans.com"},
     {"company": "High Performance Real Estate Advisors", "url": "https://highperformancerealestate.com/", "dm": "Lars Hedenborg", "title": "Founder", "location": "Charlotte, NC", "email": "lars@hprea.com"},
+    {"company": "West + Main Homes", "url": "https://westandmainhomes.com/", "dm": "Cheryl Smock", "title": "Co-Founder", "location": "Denver, CO", "email": "hello@westandmainhomes.com"},
+    {"company": "The Anderson Group", "url": "https://www.joshandersonrealestate.com/", "dm": "Josh Anderson", "title": "Owner", "location": "Nashville, TN", "email": "josh@joshandersonrealestate.com"},
+    {"company": "Independent Mortgage Brokers LLC", "url": "https://independentmortgagebrokers.com/", "dm": "Ryan Davis", "title": "Owner", "location": "Denver, CO", "email": "info@imbrokers.net"},
+    {"company": "The Mortgage Company", "url": "https://themortgageco.com/", "dm": "Team", "title": "Management", "location": "Centennial, CO", "email": "info@themortgageco.com"},
 ]
 
 def audit_website(lead):
