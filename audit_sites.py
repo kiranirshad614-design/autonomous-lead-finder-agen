@@ -70,6 +70,10 @@ all_leads = [
     {"company": "The Anderson Group", "url": "https://www.joshandersonrealestate.com/", "dm": "Josh Anderson", "title": "Owner", "location": "Nashville, TN", "email": "josh@joshandersonrealestate.com"},
     {"company": "Independent Mortgage Brokers LLC", "url": "https://independentmortgagebrokers.com/", "dm": "Ryan Davis", "title": "Owner", "location": "Denver, CO", "email": "info@imbrokers.net"},
     {"company": "The Mortgage Company", "url": "https://themortgageco.com/", "dm": "Team", "title": "Management", "location": "Centennial, CO", "email": "info@themortgageco.com"},
+    {"company": "Lake & Company Real Estate", "url": "https://lakere.com/", "dm": "Michael Skahen", "title": "Founder", "location": "Seattle, WA", "email": "info@lakere.com"},
+    {"company": "RexMont Real Estate", "url": "https://rexmont.com/", "dm": "Adriano Tori", "title": "Founder & CEO", "location": "Seattle, WA", "email": "adriano@rexmont.com"},
+    {"company": "Two Rivers Mortgage", "url": "https://www.tworiversmtg.com/", "dm": "Kat Dunn", "title": "Owner", "location": "Portland, OR", "email": "kat@tworiversmtg.com"},
+    {"company": "NW Mortgage Broker", "url": "https://nwmortgagebroker.com/", "dm": "Matt Jolivette", "title": "President", "location": "Portland, OR", "email": "matt@associatedmortgage.com"},
 ]
 
 def audit_website(lead):

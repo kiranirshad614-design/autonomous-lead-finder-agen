@@ -1,10 +1,10 @@
 # Autonomous Lead Finder Agent - Pipeline Report
 
-**Pipeline Run Date:** August 05, 2026
+**Pipeline Run Date:** August 06, 2026
 
 **Target Criteria:**
 - Industry: Real Estate & Mortgage Agencies
-- Location: Denver, CO; Nashville, TN
+- Location: Seattle, WA; Portland, OR
 - Focus: AI Lead Capture, Booking Automation, Site Speed
 
 ---
@@ -13,12 +13,12 @@
 
 | Step | Description | Result |
 |------|-------------|--------|
-| 1. Scout & Score | New Leads (Denver, Nashville) | 2 New HOT Leads Identified |
-| 2. PDF Audit | Technical Audit Reports | Generated for The Anderson Group & West + Main Homes |
-| 3. Email Verification | Syntax & MX Record Check | 2 New Emails Verified |
-| 4. Cold Outreach | Initial Audit Email | Sent to 2 New Leads |
-| 5. Automated Follow-ups | Check August 2nd Leads | 1 Follow-up sent (Ryan Rodenbeck - Spyglass Realty) |
-| 6. CRM Update | Persistent CRM Sync | `crm_google_sheets.csv` updated and cleaned |
+| 1. Scout & Score | New Leads (Seattle, Portland) | 4 New HOT Leads Identified |
+| 2. PDF Audit | Technical Audit Reports | Generated for Lake & Co, RexMont, Two Rivers, & NW Mortgage |
+| 3. Email Verification | Syntax & MX Record Check | 4 New Emails Verified |
+| 4. Cold Outreach | Initial Audit Email | Sent to 4 New Leads |
+| 5. Automated Follow-ups | Check August 3rd Leads | 2 Follow-ups sent (Tucker Blalock, Joe Trovato) |
+| 6. CRM Update | Persistent CRM Sync | `crm_google_sheets.csv` updated |
 
 ---
 
@@ -26,16 +26,19 @@
 
 | Company | Contact Person | Title | Location | Lead Score | Email |
 |---------|---------------|-------|----------|------------|-------|
-| The Anderson Group | Josh Anderson | Owner | Nashville, TN | **94/100** | josh@joshandersonrealestate.com |
-| West + Main Homes | Cheryl Smock | Co-Founder | Denver, CO | **89/100** | hello@westandmainhomes.com |
+| Lake & Company Real Estate | Michael Skahen | Founder | Seattle, WA | **100/100** | info@lakere.com |
+| RexMont Real Estate | Adriano Tori | Founder & CEO | Seattle, WA | **100/100** | adriano@rexmont.com |
+| Two Rivers Mortgage | Kat Dunn | Owner | Portland, OR | **100/100** | kat@tworiversmtg.com |
+| NW Mortgage Broker | Matt Jolivette | President | Portland, OR | **99/100** | matt@associatedmortgage.com |
 
 ---
 
-## Automated Follow-up Summary (August 2nd Leads)
+## Automated Follow-up Summary (August 3rd Leads)
 
 | Company | Contact Person | Last Contact | Follow-up Date | Status |
 |---------|---------------|--------------|----------------|--------|
-| Spyglass Realty | Ryan Rodenbeck | 2026-08-02 | 2026-08-05 | Follow-up #1 Sent |
+| The Brokery | Tucker Blalock | 2026-08-03 | 2026-08-06 | Follow-up #1 Sent |
+| Atlanta Mortgage Advisors | Joe Trovato | 2026-08-03 | 2026-08-06 | Follow-up #1 Sent |
 
 ---
 
@@ -43,8 +46,8 @@
 
 | Integration | Status | Notes |
 |-------------|--------|-------|
-| Google Sheets CRM | **Active** | `crm_google_sheets.csv` updated and malformed lines fixed |
-| Gmail Outreach | **Active** | 2 Initial, 1 Follow-up sent |
+| Google Sheets CRM | **Active** | `crm_google_sheets.csv` updated with 6 new entries |
+| Gmail Outreach | **Active** | 4 Initial, 2 Follow-ups sent |
 | Email Verification | **Active** | All new leads verified before sending |
 | GitHub | **Active** | Pushing updates to main branch |
 
@@ -55,11 +58,12 @@
 | File | Description |
 |------|-------------|
 | `audit_data/crm_google_sheets.csv` | Centralized CRM log with all outreach and follow-up data |
-| `audit_data/pdf_reports/The_Anderson_Group_Audit_Report.pdf` | Detailed audit for new HOT lead |
-| `audit_data/pdf_reports/West_+_Main_Homes_Audit_Report.pdf` | Detailed audit for new HOT lead |
-| `audit_data/pdf_reports/Spyglass_Realty_Audit_Report.pdf` | Audit report for follow-up lead |
+| `audit_data/pdf_reports/Lake_&_Company_Real_Estate_Audit_Report.pdf` | Detailed audit for new HOT lead |
+| `audit_data/pdf_reports/RexMont_Real_Estate_Audit_Report.pdf` | Detailed audit for new HOT lead |
+| `audit_data/pdf_reports/Two_Rivers_Mortgage_Audit_Report.pdf` | Detailed audit for new HOT lead |
+| `audit_data/pdf_reports/NW_Mortgage_Broker_Audit_Report.pdf` | Detailed audit for new HOT lead |
 
 ---
 
-*Report generated at: Wed Aug 05 04:00:00 UTC 2026*
+*Report generated at: Thu Aug 06 04:00:00 UTC 2026*
 *Sign-off: Kiran Irshad | Vibe Studio AI*
