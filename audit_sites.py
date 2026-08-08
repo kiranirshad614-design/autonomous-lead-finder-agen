@@ -74,6 +74,13 @@ all_leads = [
     {"company": "RexMont Real Estate", "url": "https://rexmont.com/", "dm": "Adriano Tori", "title": "Founder & CEO", "location": "Seattle, WA", "email": "adriano@rexmont.com"},
     {"company": "Two Rivers Mortgage", "url": "https://www.tworiversmtg.com/", "dm": "Kat Dunn", "title": "Owner", "location": "Portland, OR", "email": "kat@tworiversmtg.com"},
     {"company": "NW Mortgage Broker", "url": "https://nwmortgagebroker.com/", "dm": "Matt Jolivette", "title": "President", "location": "Portland, OR", "email": "matt@associatedmortgage.com"},
+    {"company": "King Realty Group", "url": "https://king-realtygroup.com/", "dm": "Lance King", "title": "Founder", "location": "San Francisco, CA", "email": "lance@king-realtygroup.com"},
+    {"company": "Huntington & Ellis", "url": "https://huntingtonandellis.com/", "dm": "Craig Tann", "title": "CEO", "location": "Las Vegas, NV", "email": "craig@huntingtonandellis.com"},
+    {"company": "Nevada Home Loans", "url": "https://www.mynevadaloan.com/", "dm": "Team", "title": "Management", "location": "Las Vegas, NV", "email": "hello@myutahmortgage.com"},
+    {"company": "Preferred Mortgage", "url": "https://www.jimwilsonhomeloans.com/", "dm": "Jim Wilson", "title": "Owner", "location": "San Francisco, CA", "email": "Jim@PrefMortgage.net"},
+    {"company": "Beyond Properties Realty", "url": "https://www.beyondpropertiesrealty.com/", "dm": "Erica Cuneen", "title": "Owner & Broker", "location": "Chicago, IL", "email": "erica@beyondpropertiesrealty.com"},
+    {"company": "The GreenHouse Group", "url": "https://thegreenhousegroupinc.com/", "dm": "Jesse Ibanez", "title": "Co-Founder", "location": "San Diego, CA", "email": "Connect@GreenMeansGrow.com"},
+    {"company": "Resident Lending & Realty", "url": "https://residentlre.com/", "dm": "Eric Atilano", "title": "CEO", "location": "San Diego, CA", "email": "ericloans1@gmail.com"},
 ]
 
 def audit_website(lead):
